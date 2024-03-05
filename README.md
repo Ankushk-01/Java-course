@@ -12,3 +12,12 @@ Diffrent types of Integers
 2. `long` which have 8 bytes
 3. `short` which have 2 bytes
 4. `byte` which have 1 byte which means it can store values between -128 to 127
+
+Diffrent types of float
+
+1. `float` which have 4 bytes
+2. `double` which have 8 bytes
+
+java by default support `double` for decimal values as it don't know the preciding values of an decimal value or it may be storing the scientific values
+
+we need to tell the compiler explicitly that store this value as `float` by adding f at the end of the line.
