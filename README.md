@@ -33,3 +33,6 @@ When we do the explicit casting of an data type then it is called `Casting` and 
 1. We can't do the casting with boolean data type to float or int it is not possible
 2. We can do it when the first type is of `int,float,short,byte` to `double,long`
 
+# Type Permossion 
+
+When we do some computation and the data type excedded then the java automatically permote the type to upper data type like from `byte` to `int` for example see this file [Casting.java](Casting.java).

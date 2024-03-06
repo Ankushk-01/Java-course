@@ -6,5 +6,7 @@ public class Casting {
         System.out.println("data : "+data);
         byte byteCount = (byte)count;
         System.out.println("byteCount : "+byteCount);
+
+        
     }
 }
