@@ -7,6 +7,11 @@ public class Casting {
         byte byteCount = (byte)count;
         System.out.println("byteCount : "+byteCount);
 
-        
+        // Type Permossions
+
+        byte num1 = 30;
+        byte num2 = 10;
+        int result = num1*num2; // the value of it will be 300 which is higher then the range of byte so it will be permoted to the int data type
+
     }
 }
