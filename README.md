@@ -21,3 +21,15 @@ Diffrent types of float
 java by default support `double` for decimal values as it don't know the preciding values of an decimal value or it may be storing the scientific values
 
 we need to tell the compiler explicitly that store this value as `float` by adding f at the end of the line.
+
+# Literals 
+
+The values assigned to the variables are called `literals` and we can do many things with them as show in file [Literls.java](./Literals.java).
+
+# Casting 
+
+When we do the explicit casting of an data type then it is called `Casting` and we can do it only with comapatable types like we cant do it with bool to char or visa versa
+
+1. We can't do the casting with boolean data type to float or int it is not possible
+2. We can do it when the first type is of `int,float,short,byte` to `double,long`
+
