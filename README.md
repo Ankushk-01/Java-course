@@ -36,3 +36,7 @@ When we do the explicit casting of an data type then it is called `Casting` and 
 # Type Permossion 
 
 When we do some computation and the data type excedded then the java automatically permote the type to upper data type like from `byte` to `int` for example see this file [Casting.java](Casting.java).
+
+## Terniory Operator 
+
+It is used to ruplicate the simple condition within one line but it is not the alternative of if else we can use it when the computation is small on condition
