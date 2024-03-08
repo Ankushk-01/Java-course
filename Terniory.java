@@ -2,7 +2,7 @@ public class Terniory {
     public static void main(String[] args) {
         int x = 6;
         int y = 60;
-        int z = 16;
+        int z = 160;
         int result = 0;
         // if(x%2==0){
         //     result = 10;
