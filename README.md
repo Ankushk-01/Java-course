@@ -40,3 +40,8 @@ When we do some computation and the data type excedded then the java automatical
 ## Terniory Operator 
 
 It is used to ruplicate the simple condition within one line but it is not the alternative of if else we can use it when the computation is small on condition
+
+## Veriable 
+
+1. Inatance Veriable : The variable define in the class and outside any method is called instance variables and when the object is created each time this variable is assigned to them.
+if we update the varaible of an one object it will not affect the other object's varialbes.
