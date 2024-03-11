@@ -19,6 +19,7 @@ public class Arrays {
         {
             for(int j = 0;j<num2[i].length;j++)
             {
+                num2[i][j] = i*j;
                 System.out.println("Value : "+num2[i][j]);
             }
         }
