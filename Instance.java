@@ -3,6 +3,8 @@ public class Instance {
     public static void main(String[] args) {
         Calculator cal = new Calculator();
         Calculator cal1 = new Calculator();
+        cal.num = 25;
+        cal1.num = 25;
         System.out.println(cal.add(5, 12));
         // System.out.println("Cal is value : "+cal.num);
         System.out.println("data : "+data);
