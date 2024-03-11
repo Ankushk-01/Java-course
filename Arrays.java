@@ -8,5 +8,11 @@ public class Arrays {
         {
             System.out.println(num[i]);
         }
+        int num1 [] = new int[4];
+        for(int i =0;i<num.length;i++)
+        {
+            System.out.println(num1[i]);
+        }
+
     }
 }
