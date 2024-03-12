@@ -49,3 +49,8 @@ if we update the varaible of an one object it will not affect the other object's
 2. `Local veriables` : The variable defined in side the method it is called the local variable and it is created and deleted when the method called.
 
 the instace variable created in Heap memory and the local variable created in stack memory.
+
+## Exceptions
+
+Exceptions are come at run time that means it compile and show no error but when we run the code it show errors. Famous exceptions are :`IndexOutOfBound` Exception `NullPointerException`
+etc.
