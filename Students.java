@@ -21,11 +21,17 @@ public class Students {
         students[1] =s2;
         students[2] =s3;
 
-        for(int i =0;i<students.length;i++)
-        {
-            System.out.println("Name : "+students[i].name);
-            System.out.println("Roll Number : "+students[i].rollNumber);
-            System.out.println("Marks : "+students[i].marks);
+        // for(int i =0;i<students.length;i++)
+        // {
+        //     System.out.println("Name : "+students[i].name);
+        //     System.out.println("Roll Number : "+students[i].rollNumber);
+        //     System.out.println("Marks : "+students[i].marks);
+        // }
+
+        for (Student s : students) {
+            System.out.println("Name : "+s.name);
+            System.out.println("Roll Number : "+s.rollNumber);
+            System.out.println("Marks : "+s.marks);
         }
     }
 }
