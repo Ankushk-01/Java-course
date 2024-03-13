@@ -1,6 +1,7 @@
 package Classes;
 public class Phone {
     public static void main(String[] args) {
+        System.out.println(Ankush.class.getName());
         try {
             Class.forName(Ankush.name);
         } catch (ClassNotFoundException e) {
