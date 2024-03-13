@@ -54,3 +54,10 @@ the instace variable created in Heap memory and the local variable created in st
 
 Exceptions are come at run time that means it compile and show no error but when we run the code it show errors. Famous exceptions are :`IndexOutOfBound` Exception `NullPointerException`
 etc.
+
+## String Constant Pool
+Types : 
+1. Mutable Strings : We can use different classes to create mutable string `StringBuilder` or `StringBuffer` 
+`StringBuffer` it is tread safe but `StringBuilder` is not.
+
+2. Imutable Strings : By default the strings are Immutalble.
