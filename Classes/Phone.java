@@ -4,6 +4,7 @@ public class Phone {
         Mobile m1 = new Mobile();
         m1.brand = "IPhone";
         m1.price = 1500;
+        m1.name = "SmartPhone"; // it will update the name for all the objects
         m1.Details();
         Mobile m2 = new Mobile();
         m2.brand = "Samsung";

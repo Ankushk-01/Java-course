@@ -66,4 +66,4 @@ When the Object is created two steps are followed :
 1. Class Loaded 
 2. Object Initalized 
 
-But the class loaded at one and there is a special area where all the classes are loaded and it is called `Class Loader` 
+But the class loaded at one and there is a special area where all the classes are loaded and it is called `Class Loader` so that is why the static block is loaded once because it static block belongs to the class.
