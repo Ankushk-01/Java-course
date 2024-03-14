@@ -76,6 +76,14 @@ and also we need to set the method access to public then the method can be acces
 
 ## Encapsulation 
 
-Encapsulation in Simple words like we have shop and we have one window to deal with peoples no one can purchase our thinks with out our permission it needs to be that person or pay for that to do so. we set the constraint on it is it satisfy our condition then you can use it other wise you can't. 
+Encapsulation in Simple words like we have shop and we have one window to deal with peoples no one can purchase our thinks without our permission it needs to be authorized person or pay for that to do so. we set the constraint on it is if it satisfy our condition then you can use it other wise you can't. 
 for reference look this file : [Encapsulation](./Classes/StaticMethod.java)
 
+### Private variables and method
+
+The private keyword simpily set the scope to the class level only means we can use then inside the class only use in the sense we can set or get values in that only
+
+### this keyword : 
+`this keyword` is only used when we have same name of our instance variable and the local variable inside an method so we need to tell the jvm that which one is our instance and local variable and we can do by tell the instace variable by start with `this.` 
+Example: 
+`this` keyword is used to refer the current object and we can ruplicate it via passing the refrence of the object and we can do some logic on the instance variables.

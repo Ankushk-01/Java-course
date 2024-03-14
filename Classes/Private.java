@@ -15,8 +15,8 @@ class Pen {
         return cost;
     }
 
-    public void setCost(String c){
-        cost = c;
+    public void setCost(String cost){
+        this.cost = cost;
     }
     public String getColor(){
         return color;
