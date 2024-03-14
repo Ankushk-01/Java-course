@@ -76,4 +76,6 @@ and also we need to set the method access to public then the method can be acces
 
 ## Encapsulation 
 
-Encapsulation in Simple words like we have doors to enter in our house so that the thinks 
+Encapsulation in Simple words like we have shop and we have one window to deal with peoples no one can purchase our thinks with out our permission it needs to be that person or pay for that to do so. we set the constraint on it is it satisfy our condition then you can use it other wise you can't. 
+for reference look this file : [Encapsulation](./Classes/StaticMethod.java)
+
