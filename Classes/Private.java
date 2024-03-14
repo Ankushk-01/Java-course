@@ -3,20 +3,28 @@ package Classes;
 public class Private {
     public static void main(String[] args) {
         Pen p1 = new Pen();
-        p1.Details();
+        Pen p2 = new Pen();
+        // p1.Details();
+        p2.setCost2(10,p2);
+        System.out.println(p2.getCost());
     }
 }
 class Pen {
-    private String cost;
+    private int cost;
     private String color;
     static String brand;
 
-    public String getCost(){
+    public int getCost(){
         return cost;
     }
 
-    public void setCost(String cost){
+    public void setCost(int cost){
         this.cost = cost;
+    }
+
+    // we can ruplicate it via passing the referenc of the object
+    public void setCost2(int cost,Pen p2 ){
+        p2.cost = cost; // set the 0 as it is default of int type in instance variable
     }
     public String getColor(){
         return color;
