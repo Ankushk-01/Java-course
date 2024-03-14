@@ -67,3 +67,13 @@ When the Object is created two steps are followed :
 2. Object Initalized 
 
 But the class loaded at one and there is a special area where all the classes are loaded and it is called `Class Loader` so that is why the static block is loaded once because it static block belongs to the class.
+
+
+## Static method 
+
+we can access the static variables in the static method but can not the instance variables we can do that we take object of that class then use the instace variables of that Ref. [StaticMethod.java](./Classes/StaticMethod.java)
+and also we need to set the method access to public then the method can be accessable to the child or other classess.
+
+## Encapsulation 
+
+Encapsulation in Simple words like we have doors to enter in our house so that the thinks 
