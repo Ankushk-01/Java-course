@@ -86,4 +86,9 @@ The private keyword simpily set the scope to the class level only means we can u
 ### this keyword : 
 `this keyword` is only used when we have same name of our instance variable and the local variable inside an method so we need to tell the jvm that which one is our instance and local variable and we can do by tell the instace variable by start with `this.` 
 Example: 
+```
+public void setCost(String cost){
+        this.cost = cost;
+    }
+```
 `this` keyword is used to refer the current object and we can ruplicate it via passing the refrence of the object and we can do some logic on the instance variables.

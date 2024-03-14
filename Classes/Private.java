@@ -4,8 +4,10 @@ public class Private {
     public static void main(String[] args) {
         Pen p1 = new Pen();
         Pen p2 = new Pen();
-        // p1.Details();
         p2.setCost2(10,p2);
+        p1.setColor("Blue");
+        p1.setCost(20);
+        p1.Details();
         System.out.println(p2.getCost());
     }
 }
@@ -13,7 +15,9 @@ class Pen {
     private int cost;
     private String color;
     static String brand;
-
+    static {
+        brand = "Butterflow";
+    }
     public int getCost(){
         return cost;
     }
