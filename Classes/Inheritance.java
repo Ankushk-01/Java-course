@@ -1,4 +1,7 @@
 package Classes;
+
+import javax.management.ObjectName;
+
 class A {
     public A(){
         System.out.println(" Inside the A constructor");
@@ -9,17 +12,19 @@ class A {
 }
 class B extends A {
     public B(){
+        super("Ankush");
         System.out.println(" Inside the B constructor");
     }
 
     public B(String name){
-        super(name);
+        this();
         System.out.println("B class peramitarized constructor called with value : "+name);
     }
 }
-public class Inheritance {
+public class Inheritance extends Object{
     public static void main(String[] args) {
-        // B b = new B();
-        B b1 = new B("Ankush");
+        B b = new B();
+        // B b1 = new B("Ankush");
+        // System.out.println(b1);
     }
 }
