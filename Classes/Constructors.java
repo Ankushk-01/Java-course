@@ -6,6 +6,8 @@ public class Constructors {
        System.out.println(apple.toString());
        Fruit bannana = new Fruit("bannana", "sweet", 12);
        System.out.println(bannana.toString()); 
+       // the default value of String is null and the default value of an object is also null
+    //    String is considered as a String 
     }
 }
 
