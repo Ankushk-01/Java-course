@@ -20,11 +20,16 @@ class B extends A {
         this();
         System.out.println("B class peramitarized constructor called with value : "+name);
     }
+    public void show(){
+        System.out.println("show method");
+    }
 }
 public class Inheritance extends Object{
     public static void main(String[] args) {
         B b = new B();
         // B b1 = new B("Ankush");
         // System.out.println(b1);
+
+        new B().show(); // anormous object it create the object but we can't use it again
     }
 }
