@@ -4,7 +4,7 @@ class A {
         System.out.println(" Inside the A constructor");
     }
     public A(String name){
-        System.out.println("A class peramitarized constructor with value : "+name);
+        System.out.println("A class peramitarized constructor called with value : "+name);
     }
 }
 class B extends A {
@@ -13,11 +13,13 @@ class B extends A {
     }
 
     public B(String name){
-        System.out.println("B class peramitarized constructor with value : "+name);
+        super(name);
+        System.out.println("B class peramitarized constructor called with value : "+name);
     }
 }
 public class Inheritance {
     public static void main(String[] args) {
-        B b = new B();
+        // B b = new B();
+        B b1 = new B("Ankush");
     }
 }
