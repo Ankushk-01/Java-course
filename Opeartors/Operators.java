@@ -1,3 +1,4 @@
+package Opeartors;
 public class Operators {
     public static void main(String[] args) {
         int num1 =7;

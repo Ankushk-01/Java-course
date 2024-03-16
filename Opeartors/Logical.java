@@ -1,3 +1,4 @@
+package Opeartors;
 public class Logical {
     public static void main(String[] args) {
         int a = 10;

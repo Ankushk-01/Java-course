@@ -1,3 +1,4 @@
+package Opeartors;
 public class Arithmatic {
     public static void main(String[] args) {
         double x = 6.5;
