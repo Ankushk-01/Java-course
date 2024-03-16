@@ -1,3 +1,4 @@
+package Classes;
 public class Instance {
     static int data = 10;
     public static void main(String[] args) {
