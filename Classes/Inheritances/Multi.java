@@ -6,9 +6,9 @@ class A{
     }
 }
 class B extends A{
-    public void name(){
-        System.out.println("Method of class B");
-    }
+    // public void name(){
+    //     System.out.println("Method of class B");
+    // }
 }
 public class Multi {
     public static void main(String[] args) {
