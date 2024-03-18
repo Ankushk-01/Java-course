@@ -1,7 +1,5 @@
 package Classes;
 
-import javax.management.ObjectName;
-
 class A {
     public A(){
         System.out.println(" Inside the A constructor");
@@ -26,7 +24,7 @@ class B extends A {
 }
 public class Inheritance extends Object{
     public static void main(String[] args) {
-        B b = new B();
+        // B b = new B();
         // B b1 = new B("Ankush");
         // System.out.println(b1);
 
