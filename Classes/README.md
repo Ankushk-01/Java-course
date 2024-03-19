@@ -22,3 +22,9 @@ For more info see this code [Constuctors.java](Constructors.java)
 ## Method Overriding
 
 We need to make the method return type and parameters to be same so that it overide the parent method only the logic can be changed.
+
+## Polimorphism
+
+The same onject behave different in different places. It is of two types :
+1. Compile time Polymorphism or Early binding Polymorphism
+2. Run time Polymorphism or late binding Polymorphism
