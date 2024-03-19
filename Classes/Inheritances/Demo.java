@@ -8,5 +8,11 @@ public class Demo {
         System.out.println(cal.add(19,2));
         System.out.println(cal.minus(19,2));
         System.out.println(cal.power(19,2));
+        Lunch l1 = new Lunch();
+        System.out.println(l1.data);
     }
+}
+
+class Lunch{
+    protected int data = 19;
 }
