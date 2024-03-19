@@ -26,5 +26,7 @@ We need to make the method return type and parameters to be same so that it over
 ## Polimorphism
 
 The same onject behave different in different places. It is of two types :
-1. Compile time Polymorphism or Early binding Polymorphism
-2. Run time Polymorphism or late binding Polymorphism
+1. Compile time Polymorphism or Early binding Polymorphism : 
+Example : `method overloading` which will run is decided at compile time.
+2. Run time Polymorphism or late binding Polymorphism :
+Example : `method overriding` which will run is decided at run time.
