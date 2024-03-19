@@ -30,3 +30,7 @@ The same onject behave different in different places. It is of two types :
 Example : `method overloading` which will run is decided at compile time.
 2. Run time Polymorphism or late binding Polymorphism :
 Example : `method overriding` which will run is decided at run time.
+
+`dynamic method dispatch` in this concept which method will be run is decided at run time while seeing the object reference it have. for more info reference : [DynamicMethod.java](./DynamicMethod.java)
+
+Parent class can have child object reference and it will decide at run time which method of which class will run it is also comes under polimorphism.
