@@ -1,18 +1,18 @@
 package Classes.Inheritances;
 
 class A{
-    public void name(){
-        System.out.println("Method of class A");
+    public int add(int a,int b){
+        return a+b;
     }
 }
 class B extends A{
-    // public void name(){
-    //     System.out.println("Method of class B");
-    // }
+    public int add(int a,int b){
+        return a+b+2; // Added the 2 extra
+    }
 }
 public class Multi {
     public static void main(String[] args) {
         B b = new B();
-        b.name();
+        System.out.println(b.add(7,5));
     }
 }

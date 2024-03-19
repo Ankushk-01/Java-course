@@ -18,3 +18,7 @@ in every constructor the first line is `super()` it is not visible but it is the
 We can't call the `super()` and `this()` methods both in the same constructor
 
 For more info see this code [Constuctors.java](Constructors.java)
+
+## Method Overriding
+
+We need to make the method return type and parameters to be same so that it overide the parent method only the logic can be changed.
