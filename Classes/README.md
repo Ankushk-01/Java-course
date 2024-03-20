@@ -34,3 +34,13 @@ Example : `method overriding` which will run is decided at run time.
 `dynamic method dispatch` in this concept which method will be run is decided at run time while seeing the object reference it have. for more info reference : [DynamicMethod.java](./DynamicMethod.java)
 
 Parent class can have child object reference and it will decide at run time which method of which class will run it is also comes under polimorphism.
+
+## final keyword :
+
+final keyword can be used with variable, method and with class but it different functionality in different use case.
+### Example :
+1. When we are using `final` keyword with a variable it makes the variable constant means we can't re assign the value to it.
+2. When we are using `final` keyword with a class we stop the inheritence of the class means we can't inherit or it can't be extends anymore
+3. When we are using `final` keyword with a method we stop the method overriding of that method means no sub class can override the method which is final
+
+for more info refer this class [FinalKeyword.java](/Classes/FinalKeyword.java).
