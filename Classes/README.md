@@ -44,3 +44,7 @@ final keyword can be used with variable, method and with class but it different 
 3. When we are using `final` keyword with a method we stop the method overriding of that method means no sub class can override the method which is final
 
 for more info refer this class [FinalKeyword.java](/Classes/FinalKeyword.java).
+
+## Upcasting and Lowcasting
+
+When we type cast the reference of the child class varible to parent class it is called `upcasting` type casting and doing visa versa it is called `lowcasting` type casting.
