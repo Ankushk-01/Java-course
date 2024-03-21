@@ -17,5 +17,9 @@ public class Casting {
         // we can do so by type casting it
         B obj2 = (B) obj;
         obj2.show2();
+
+        B obj3 = new A();
+        obj3.show1();
+        obj3.show2();
     }
 }
