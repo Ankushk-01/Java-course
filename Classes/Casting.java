@@ -14,5 +14,8 @@ public class Casting {
         A obj = new B();
         // as it have reference of B class but still can't call the `show2` method of B class
         obj.show1();
+        // we can do so by type casting it
+        B obj2 = (B) obj;
+        obj2.show2();
     }
 }
