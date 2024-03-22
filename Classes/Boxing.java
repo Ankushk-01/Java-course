@@ -7,5 +7,13 @@ public class Boxing {
         Integer num3 = num;  // Auto-boxing as it is doing the same above thing but internally.
 
         System.out.println("num3 : "+num3);
+
+        int value = num2.intValue(); // un-boxing 
+
+        System.out.println("value : "+value);
+
+        int value2 = num3; // Auto unboxing 
+        
+        System.out.println("value 2 : "+value2);
     }
 }
