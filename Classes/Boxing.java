@@ -13,7 +13,12 @@ public class Boxing {
         System.out.println("value : "+value);
 
         int value2 = num3; // Auto unboxing 
-        
+
         System.out.println("value 2 : "+value2);
+
+        String data = "12345";
+        int dataValue = Integer.parseInt(data);
+
+        System.out.println("data Value : "+dataValue);
     }
 }
