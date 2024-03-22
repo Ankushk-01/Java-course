@@ -48,3 +48,13 @@ for more info refer this class [FinalKeyword.java](/Classes/FinalKeyword.java).
 ## Upcasting and Lowcasting
 
 When we type cast the reference of the child class varible to parent class it is called `upcasting` type casting and doing visa versa it is called `lowcasting` type casting.
+
+## Abstract Keyword
+
+It is used to define an logic which is not implemented yet but in future we need to do so. so we can create an abstract class of it and  define abstract methods in it.
+
+**We can define the abstract class which can have no abstract method**
+
+but we need to create a class abstract if we are defining the abstract method.
+
+For more info [Abstract.java](./Abstract.java)
