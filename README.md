@@ -92,3 +92,8 @@ public void setCost(String cost){
     }
 ```
 `this` keyword is used to refer the current object and we can ruplicate it via passing the refrence of the object and we can do some logic on the instance variables.
+
+## inner class
+
+we can make the inner class as static but can't make the outer class static as only public,abstract or final keyword are allowed for the outer class.
+as we need an object to instalize the `child` class. So we need to create the outer class non static 
