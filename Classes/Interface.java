@@ -5,7 +5,8 @@ public class Interface {
         Computer c1 = new Desktop();
         Computer c2 = new Laptop();
         Devloper dev1 = new Devloper();
-        dev1.devApp(c1);
+        // dev1.devApp(c1);
+        dev1.devApp(c2);
     }
 }
 
