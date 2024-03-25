@@ -2,7 +2,9 @@ package Classes;
 
 public class Interfaces {
     public static void main(String[] args) {
-
+        AudiA4 a1 = new AudiA4();
+        a1.run();
+        a1.wheels();
     }
 }
 
@@ -24,8 +26,23 @@ interface A {
     void config(); // public and abstract
 }
 
-interface C {
-    void showB();
+interface Car {
+    void wheels();
+}
 
-    void configB();
+interface Audi extends Car{
+    void run();
+}
+
+class AudiA4 implements Audi{
+
+    @Override
+    public void wheels() {
+        System.out.println("it have 4 wheels");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("car running .....");
+    }
 }
