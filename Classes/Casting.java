@@ -18,7 +18,7 @@ public class Casting {
         B obj2 = (B) obj;
         obj2.show2();
 
-        B obj3 = new A();
+        B obj3 = (B) new A();
         obj3.show1();
         obj3.show2();
     }
