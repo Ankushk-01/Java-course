@@ -68,3 +68,9 @@ By default the method defined in interfece have `public and abstract` keyword wi
 
 By default the variable defined in `interfaces` are have `static and final` keyword with then because the interface will never going to intalized and have fixed sapce so we can't set values after it is defined.
 
+# IMPORTANT POINT 
+
+1. Class extends the other class
+2. class extends the other abstract class
+3. class can implements the interfaces
+3. interfaces can also extends the other interfaces
