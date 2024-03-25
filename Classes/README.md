@@ -58,3 +58,13 @@ It is used to define an logic which is not implemented yet but in future we need
 but we need to create a class abstract if we are defining the abstract method.
 
 For more info [Abstract.java](./Abstract.java)
+
+## Interface
+
+we can not implements the mehtod in a `interface` as we can do it in `abstract` class.
+1. Default value :
+
+By default the method defined in interfece have `public and abstract` keyword with them we don't need to write it explicitly
+
+By default the variable defined in `interfaces` are have `static and final` keyword with then because the interface will never going to intalized and have fixed sapce so we can't set values after it is defined.
+

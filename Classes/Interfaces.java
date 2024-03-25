@@ -1,25 +1,31 @@
 package Classes;
+
 public class Interfaces {
     public static void main(String[] args) {
-        
+
     }
 }
 
 class B implements A {
-    public void show(){
+    public void show() {
         System.out.println("show method");
     }
-    public void config(){
+
+    public void config() {
         System.out.println("config method");
     }
 }
+
 interface A {
-    int num = 13; // static and abstract 
+    int num = 13; // static and abstract
+
     void show();
+
     void config(); // public and abstract
 }
 
-interface Car {
-    void blowHorn();
-    void drive();
+interface C {
+    void showB();
+
+    void configB();
 }
