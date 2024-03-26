@@ -36,9 +36,32 @@ public class enums {
                 System.out.println("Failed");
                 break;
         }
+
+        Mobile m1 = Mobile.Redmi;
+        System.out.println(m1.getClass().getSuperclass());
+        System.out.println(m1.getPrice());
     }
 }
 
 enum Status {  // it creates the class of name Status
     running, panding,success,failed   // These are the objects of the class
+}
+
+enum Mobile {
+    Iphone(1500),Samsung(100),Redmi(80),Vivo(50),Nokia;  // Constructor
+
+    private int price;
+
+    private Mobile(){
+        this.price = 30;
+    }
+    private Mobile(int price){
+        this.price = price;
+    }
+    public void setPrice(int price){
+        this.price = price;
+    }
+    public int getPrice(){
+        return this.price;
+    }
 }
