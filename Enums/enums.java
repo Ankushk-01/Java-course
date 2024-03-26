@@ -18,6 +18,24 @@ public class enums {
         else{
             System.out.println("running");
         }
+        Status s3 = Status.failed;
+        switch (s3) {
+            case success:
+                System.out.println("success");
+                break;
+        
+            case panding:
+                System.out.println("panding");
+                break;
+        
+            case running:
+                System.out.println("running");
+                break;
+        
+            default:
+                System.out.println("Failed");
+                break;
+        }
     }
 }
 
