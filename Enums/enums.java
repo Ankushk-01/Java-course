@@ -4,6 +4,20 @@ public class enums {
         for(Status s : s1){
             System.out.println("Status : "+s+" value : "+s.ordinal());
         }
+
+        Status s2 = Status.success;
+        if (s2 == Status.success) {
+            System.out.println("Sucesss");
+        }
+        else if (s2 == Status.failed) {
+            System.out.println("Failed");
+        }
+        else if (s2 == Status.panding) {
+            System.out.println("panding");
+        }
+        else{
+            System.out.println("running");
+        }
     }
 }
 
