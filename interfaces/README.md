@@ -12,3 +12,14 @@ we have 3 types of interfaces :
 The empty interface is called marker interface. We create an empty interface if we want to store the objects or data of the object in the hard drive and then distroy the object. 
 We do it when we want to use that data or object later in future.
 
+By default we are not allowed to save data of an object in hard drive that is why we use interface to do so.
+
+### Example : serializable interface 
+
+## Serialization 
+when we save the interface data on the hard drive it is called serialization 
+
+## De-Serialization 
+
+When we load the saved local drive data in the java program it is called de-serialization.
+
