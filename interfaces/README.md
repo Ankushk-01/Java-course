@@ -25,3 +25,11 @@ when we save the interface data on the hard drive it is called serialization
 
 When we load the saved local drive data in the java program it is called de-serialization.
 
+## Errors 
+
+The bugs which can not be fixed or ignored while doing copilation or while runing the code. 
+Different types of the Errors : 
+
+1. Compile time error :
+2. Runtime error :
+3. Logical errors : 
