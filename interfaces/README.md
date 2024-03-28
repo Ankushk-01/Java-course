@@ -8,6 +8,8 @@ we have 3 types of interfaces :
 
 2. SAM or functional interfaces : SAM stands for Single Abstract method interface means if we have only one function defination in a entire interface block it is called SAM or functional interface
 
+We can only use the lambda expression for the functional interfaces. For more info [Interfaces.java](./Demo.java)
+
 3. Marker interface: 
 The empty interface is called marker interface. We create an empty interface if we want to store the objects or data of the object in the hard drive and then distroy the object. 
 We do it when we want to use that data or object later in future.
