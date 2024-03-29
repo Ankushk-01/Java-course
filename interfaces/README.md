@@ -36,3 +36,22 @@ Different types of the Errors :
 This process is called `Exception handling` and it may rise if we trying to read the a text file or dividing an value with 0 etc.
 
 3. Logical errors : Every thing is working fine on compile time and run time but the expected output is different from the actual output. we call it a bug. to solve this we do `debugging`.
+
+## Exceptions
+
+Exceptions are the run time errors which we can handle.
+
+Tree of Exception class :
+
+1. Object: it is the top or base class of every class in java so it is `shemo` in java.
+
+2. Throwable : it is the class which extends the `object` class and it is the top level or parent class of both `Exception` and `Error` class.
+
+3. Exception : it is the base class of each and every Exception class in java. 
+**Example** : SQLException,IOException etc.
+They are also called `checked exceptions` as the compiler force you to handle that exceptions.
+
+4. RunTimeException: the exceptions comes in this cetagory are also called `un-checked` excptions means compiler will never force use to handle that exceptions and are comes only at run time and comipler can not find it while writing the code.
+**Example:** ArithmeticException,NullPointerException,IndexOutOfBoundException etc..
+
+Error class: we may have error in our program which we can not handle like : IO error means file not found or can not able to read or Thread Dead error etc. 
