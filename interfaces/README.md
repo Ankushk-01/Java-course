@@ -55,3 +55,9 @@ They are also called `checked exceptions` as the compiler force you to handle th
 **Example:** ArithmeticException,NullPointerException,IndexOutOfBoundException etc..
 
 Error class: we may have error in our program which we can not handle like : IO error means file not found or can not able to read or Thread Dead error etc. 
+
+## throw keyword 
+
+it is used to raise a Exception and we can do so by creating the object of the Exception and pass the message in the constructor of the object. 
+
+it is used when we want to execute the catch block when some condition satisfied.
