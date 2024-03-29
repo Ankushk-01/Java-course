@@ -30,6 +30,9 @@ When we load the saved local drive data in the java program it is called de-seri
 The bugs which can not be fixed or ignored while doing copilation or while runing the code. 
 Different types of the Errors : 
 
-1. Compile time error :
-2. Runtime error :
-3. Logical errors : 
+1. Compile time error : those error which can be found by compiler are called compile time errors. **Example** : syntex error or data type mismatch or dead code etc.
+
+2. Runtime error : Those errors which come at run time are called run time erros it is also called `Exceptions` we can handle the exceptions as we can cover the edge cases where our code can fails. 
+This process is called `Exception handling` and it may rise if we trying to read the a text file or dividing an value with 0 etc.
+
+3. Logical errors : Every thing is working fine on compile time and run time but the expected output is different from the actual output. we call it a bug. to solve this we do `debugging`.
