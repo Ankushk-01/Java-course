@@ -61,3 +61,12 @@ Error class: we may have error in our program which we can not handle like : IO 
 it is used to raise a Exception and we can do so by creating the object of the Exception and pass the message in the constructor of the object. 
 
 it is used when we want to execute the catch block when some condition satisfied.
+
+## System.out.println();
+
+Here System is the class and in the `System` class we have an static object of class `PrintStream` which name is `out` and the `println()` is the method of `PrintStream` class.
+
+Note : 
+1. `System` is the class which have `out` variable or object defined in it.
+2. `out` is the refrence variable or object of class `PrintStream`
+3. `println()` is the method of the class `PrintStream` 
