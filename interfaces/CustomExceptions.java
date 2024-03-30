@@ -12,6 +12,7 @@ public class CustomExceptions {
 
         } 
         catch (AnkushException e){
+            System.out.println("class name : "+e.getClass().getName());
             System.out.println("AnkushException Arrised : "+e.getMessage());
         }
         catch(ArithmeticException e){
