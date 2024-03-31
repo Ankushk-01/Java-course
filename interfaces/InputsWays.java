@@ -12,7 +12,9 @@ public class InputsWays {
             e.printStackTrace();
         }
 
-        //
+        // to resolve this issue remove the value 48 from the num 
+
+        num -= 68;
         System.out.println("the number is : "+num);
         
     }
