@@ -70,3 +70,11 @@ Note :
 1. `System` is the class which have `out` variable or object defined in it.
 2. `out` is the refrence variable or object of class `PrintStream`
 3. `println()` is the method of the class `PrintStream` 
+
+## Inputs ways 
+
+`num = System.in.read();` this is another way to read the inputs from the console but have multiple drawbacks.
+1. This retruns the ASCII value of the inputed value if we want to see the expected output we need to substact the 48 from the taken value
+2. It only takes the one character at a time.
+
+[Inputs.java](./InputsWays.java)
