@@ -11,3 +11,5 @@ We calls the `start()` method of an Thread class and it required to override the
 But if we need to run the `start()` method and the methods of Thread class we can create the Thread class object from the Runnable interface class by passing the object reference in Thread class constructor.
 
 Note : 1. We can optimize the Threads but can't decide the exicution of the thread as it depends on the OS of the system and the Schedular Algorithm to which thread to pick.
+
+2. Lambda Expressions only works on Functional Interfaces.
