@@ -5,15 +5,17 @@ public class Count {
     public static void main(String[] args) {
         A a = new A();
         Runnable obj1 = ()->{
-            for(int i =0;i<1000;i++){
+            for(int i =0;i<100;i++){
                 a.increment();
                 num = num+1;
+                a.printCount();
             }
         };
         Runnable obj2 = ()->{
-            for(int i =0;i<1000;i++){
+            for(int i =0;i<100;i++){
                 a.increment();
                 num++;
+                a.printCount();
             }
         };
 
@@ -40,5 +42,8 @@ class A {
     int count;
     public void increment(){
         count++;
+    }
+    public void printCount(){
+        System.out.println("now : "+count);
     }
 }
