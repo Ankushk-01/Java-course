@@ -1,16 +1,19 @@
 package Threads;
 
 public class Count {
+    public static int num = 0;
     public static void main(String[] args) {
         A a = new A();
         Runnable obj1 = ()->{
             for(int i =0;i<1000;i++){
                 a.increment();
+                num = num+1;
             }
         };
         Runnable obj2 = ()->{
             for(int i =0;i<1000;i++){
                 a.increment();
+                num++;
             }
         };
 
@@ -19,11 +22,13 @@ public class Count {
 
         t1.start();
         t2.start();
+        System.out.println("count : "+a.count);
+        System.out.println("num : "+num);
     }
 }
 
 class A {
-    int count = 0;
+    int count;
     public void increment(){
         count++;
     }
