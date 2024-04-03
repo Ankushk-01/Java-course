@@ -22,6 +22,15 @@ public class Count {
 
         t1.start();
         t2.start();
+
+        // Join the threads with the main thread
+        try {
+            t1.join();
+            t2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         System.out.println("count : "+a.count);
         System.out.println("num : "+num);
     }
