@@ -30,6 +30,7 @@ public class Count {
             t1.join();
             t2.join();
         } catch (InterruptedException e) {
+         
             e.printStackTrace();
         }
 
@@ -40,10 +41,10 @@ public class Count {
 
 class A {
     int count;
-    public void increment(){
+    public synchronized void increment(){
         count++;
     }
-    public void printCount(){
+    public synchronized void printCount(){
         System.out.println("now : "+count);
     }
 }

@@ -16,3 +16,9 @@ Note : 1. We can optimize the Threads but can't decide the execution of the thre
 
 `join()` method is used to stop the calling Thread for execution util it completes it execution and then the calling Thread continues its execution.
 [Count.java](./Count.java).
+
+When we are doing READ and WRITE on a resource using Threads we will see some un expected outputs because threads run parallels so it may some times override the same value in the resource.
+it is called `Race Condition`
+
+## Threads Life Cycle
+![Threads](image.png)
