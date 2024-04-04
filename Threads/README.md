@@ -29,7 +29,19 @@ It simply means the concept of collections
 
 # Collection 
 
-It means the Interface which used by the some classes
+It means the Interface which used by the some classes and implemented by some interfaces which are listed below :
+
+* List (interface)
+1. ArrayList
+2. LinkedList
+
+* Set (interface)
+
+1. HashSet
+2. LinkedHashSet
+
+* Queue (interface)
+1. Dequeue
 
 # Collections 
 It means the class which have multiple methods which we  can use 
