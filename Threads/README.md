@@ -29,7 +29,7 @@ It simply means the concept of collections
 
 # Collection 
 
-It means the Interface which used by the classes
+It means the Interface which used by the some classes
 
 # Collections 
-It means the class which inherits the interface 
+It means the class which have multiple methods which we  can use 
