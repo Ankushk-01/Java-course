@@ -22,3 +22,14 @@ it is called `Race Condition`
 
 ## Threads Life Cycle
 ![Threads](image.png)
+
+# Collection Api 
+
+It simply means the concept of collections 
+
+# Collection 
+
+It means the Interface which used by the classes
+
+# Collections 
+It means the class which inherits the interface 
