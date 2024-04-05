@@ -5,3 +5,9 @@ We can use List to do indexing of the data
 In list we can add same values but in set we can't
 
 [Intro.java](First.java)
+
+# Set
+
+HashSet : not give the values in the same order it takes and not save the same value and also not sort the value so it is fast 
+
+TreeSet : sort the value do some sorting in background so it is slow in terms of HashSet
