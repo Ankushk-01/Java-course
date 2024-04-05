@@ -17,7 +17,13 @@ public class First {
         num.add(2);
         num.add(3);
         num.add(4);
+        num.add("ankush"); // accidentally added the string instead of int
 
         System.out.println(" num : "+num);
+
+        for( Object value : num){
+            int val = (int)value; // give run time error java.lang.ClassCastException
+            System.out.println("num value : "+val);
+        }
     }
 }
