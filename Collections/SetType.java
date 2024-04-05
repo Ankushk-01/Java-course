@@ -3,6 +3,7 @@ package Collections;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.Iterator;
 
 public class SetType {
     public static void main(String[] args) {
@@ -31,8 +32,13 @@ public class SetType {
         num1.add(95);
         num1.add(63);
 
-        for(int num : num1 ){
-            System.out.println("num1 : "+num);
+        // for(int num : num1 ){
+        //     System.out.println("num1 : "+num);
+        // }
+
+        Iterator<Integer> it = num1.iterator();
+        while (it.hasNext()) {
+            System.out.println("value : "+it.next());
         }
     }
 
