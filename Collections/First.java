@@ -12,7 +12,7 @@ public class First {
         System.out.println("data : "+data);
 
         Collection num = new ArrayList<>();
-
+        // Collection<Integer> num = new ArrayList<Integer>();
         num.add(1);
         num.add(2);
         num.add(3);
