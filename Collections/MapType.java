@@ -14,5 +14,8 @@ public class MapType {
         data.put("Vinay", 55);
 
         System.out.println("data : "+data);
+        for(String key : data.keySet()){
+            System.out.println(key+" : "+data.get(key));
+        }
     }
 }
