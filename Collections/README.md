@@ -15,3 +15,11 @@ TreeSet : sort the value do some sorting in background so it is slow in terms of
 If we want to use synchronized Map then we can use `HashTable` it provide the synchronization by default
 
 We can use the `Collections` class to do the additional functionality on the Collection interface. [Comparator.java](./ComparatorFile.java).
+
+# Comparator 
+this is the interface which we can used to define the custom logic to sort the List.
+[ComparatorTest.java](./ComparatorTest.java).
+
+We need to specify the custom logic to sort the user defined or on custom class as the Comparator do not know how to sort it. We have two ways to do it by creating the object of `Comparator` interface or we can implements the `Comparable` interface on the custom class.
+
+[CustomComparator.java]
