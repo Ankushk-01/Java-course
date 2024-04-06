@@ -13,3 +13,5 @@ HashSet : not give the values in the same order it takes and not save the same v
 TreeSet : sort the value do some sorting in background so it is slow in terms of HashSet
 
 If we want to use synchronized Map then we can use `HashTable` it provide the synchronization by default
+
+We can use the `Collections` class to do the additional functionality on the Collection interface. [Comparator.java](./ComparatorFile.java).
