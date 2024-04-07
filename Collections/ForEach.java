@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class ForEach {
     public static void main(String[] args) {
@@ -12,20 +13,29 @@ public class ForEach {
         //     System.out.println(nums.get(i));
         // }
 
-        for(int i : nums){
-            System.out.println(i);
-        }
+        // for(int i : nums){
+        //     System.out.println(i);
+        // }
 
-        nums.forEach(i -> System.out.println(i)); // new way
+        // nums.forEach(i -> System.out.println(i)); // new way
+        //another way to do the same is 
 
-        int sum = 0;
+        // Consumer<Integer> con = new Consumer<Integer>() {
+        //     public void accept(Integer i){
+        //         System.out.println(i);
+        //     }
+        // };
+        Consumer<Integer> con = (i) ->System.out.println(i);
+        
+        nums.forEach(con); 
+        // int sum = 0;
 
-        for(int i : nums){
-            if(i%2==0){
-                sum += i*2;
-            }
-        }
-        System.out.println("sum : "+sum);
+        // for(int i : nums){
+        //     if(i%2==0){
+        //         sum += i*2;
+        //     }
+        // }
+        // System.out.println("sum : "+sum);
 
         // for(int i =0;i<nums.size();i++){
         //     int num = nums.get(i);

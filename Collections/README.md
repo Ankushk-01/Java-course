@@ -25,3 +25,9 @@ We need to specify the custom logic to sort the user defined or on custom class 
 [CustomComparator.java]
 
 
+forEach loop in List interface have a very unique way to send the each element of the list
+and it send the each element to the `Consumer` interface which decide what to do with the element in background so we can prove this by creating the object of it and pass it to the forEach loop.
+
+Consumer is a functional interface so we can write the lambda expression for it.
+
+For more info [ForEach.java](./ForEach.java)
