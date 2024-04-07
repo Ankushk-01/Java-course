@@ -17,5 +17,23 @@ public class ForEach {
         }
 
         nums.forEach(i -> System.out.println(i)); // new way
+
+        int sum = 0;
+
+        for(int i : nums){
+            if(i%2==0){
+                sum += i*2;
+            }
+        }
+        System.out.println("sum : "+sum);
+
+        // for(int i =0;i<nums.size();i++){
+        //     int num = nums.get(i);
+        //     if(num%2==0){
+        //         nums.add(i,(num*2));
+        //     }
+        // }
+
+        // System.out.println(nums);
     }
 }
