@@ -23,3 +23,5 @@ this is the interface which we can used to define the custom logic to sort the L
 We need to specify the custom logic to sort the user defined or on custom class as the Comparator do not know how to sort it. We have two ways to do it by creating the object of `Comparator` interface or we can implements the `Comparable` interface on the custom class.
 
 [CustomComparator.java]
+
+
