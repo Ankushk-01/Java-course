@@ -9,15 +9,15 @@ public class ForEach {
         List<Integer> nums = Arrays.asList(2,7,4,9,6,8);
 
         // different ways to print list
-        // for(int i =0;i<nums.size();i++){
-        //     System.out.println(nums.get(i));
-        // }
+        for(int i =0;i<nums.size();i++){
+            System.out.println(nums.get(i));
+        }
 
-        // for(int i : nums){
-        //     System.out.println(i);
-        // }
+        for(int i : nums){
+            System.out.println(i);
+        }
 
-        // nums.forEach(i -> System.out.println(i)); // new way
+        nums.forEach(i -> System.out.println(i)); // new way
         //another way to do the same is 
 
         // Consumer<Integer> con = new Consumer<Integer>() {
