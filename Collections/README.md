@@ -31,3 +31,20 @@ and it send the each element to the `Consumer` interface which decide what to do
 Consumer is a functional interface so we can write the lambda expression for it.
 
 For more info [ForEach.java](./ForEach.java)
+
+## Stream 
+
+it is work on collection api and it is used to work with the collections and it now apply any changes on the real data it just used the type which created it and apply the functionality  and then return the result.
+
+It have lots of functions which we can use to do operations on the data structure 
+
+Note : 
+1. we can use stream only once and after that it give error that the stream is closed.
+2. Do not apply the sort method to the `ParallelStream` as it work on multi- threading and for sort method we need all the values at once to do sorting 
+
+Example : [Streams](./StreamApi.java)
+
+We used the following methods :
+
+1. `filter():` it is used to do the filtration on the upcoming element of the data structure 
+it needs the object of Predicate interface to decide what to filter form the stream. 
