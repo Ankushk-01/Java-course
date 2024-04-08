@@ -47,4 +47,11 @@ Example : [Streams](./StreamApi.java)
 We used the following methods :
 
 1. `filter():` it is used to do the filtration on the upcoming element of the data structure 
-it needs the object of Predicate interface to decide what to filter form the stream. 
+it needs the object of `Predicate` interface to decide what to filter form the stream. 
+
+
+2. `map() : ` this method do the functionality of on the upcoming stream data we can write any logic for that and it also return the stream as a result.
+
+3. `reduce():` this method do the functionality on the elements and it returns the datatype not the stream and it take two arguments.
+* starting value : in our case it was 0
+* lambda expression : what to do with the data. in our case we are adding the dat so it have 2 values 1. `c` which means carry which is the last result of the computation and `e` which stands for element which comes from the stream.
