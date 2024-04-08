@@ -28,22 +28,22 @@ public class ForEach {
         Consumer<Integer> con = (i) ->System.out.println(i);
         
         nums.forEach(con); 
-        // int sum = 0;
+        int sum = 0;
 
-        // for(int i : nums){
-        //     if(i%2==0){
-        //         sum += i*2;
-        //     }
-        // }
-        // System.out.println("sum : "+sum);
+        for(int i : nums){
+            if(i%2==0){
+                sum += i*2;
+            }
+        }
+        System.out.println("sum : "+sum);
 
-        // for(int i =0;i<nums.size();i++){
-        //     int num = nums.get(i);
-        //     if(num%2==0){
-        //         nums.add(i,(num*2));
-        //     }
-        // }
+        for(int i =0;i<nums.size();i++){
+            int num = nums.get(i);
+            if(num%2==0){
+                nums.add(i,(num*2));
+            }
+        }
 
-        // System.out.println(nums);
+        System.out.println(nums);
     }
 }
