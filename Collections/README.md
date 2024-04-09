@@ -62,3 +62,6 @@ this is introduced in java 10 and we can give the data type to `var` to a variab
 
 Note : 
 1. we need to initialized the `var` keyword variable as compiler used it to find out the data type of the variable other wise give the error of `cannot infer type for local variable`.
+
+2. These type of variables are defined inside the method as local variables not as instance variable otherwise gives error that not allowed here.
+`'var' is not allowed here`
