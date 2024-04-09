@@ -72,4 +72,10 @@ Note :
 
 2. final classes : these classes are the those classes which restrict itself to inherit that means no other class or interface can inherit it. We can say that this is the final implementation of the class 
 
-But in `Sealed classes` we can restrict the class or tell the class which classes or interfaces can inherit it and we can do it by the help of `sealed` keyword
+But in `Sealed classes` we can restrict the class or tell the class which classes or interfaces can inherit it and we can do it by the help of `sealed` keyword and we can allow classes by `permits` keyword.
+
+note :
+1. the class name of permits class comes at the end of the all the extends or implements clause or keyword.
+2. the class which are extends the sealed class must have `sealed`, `non-sealed` or `final` class
+
+for more info. please refer [SealedClasses.java](./SealedClass.java)
