@@ -65,3 +65,11 @@ Note :
 
 2. These type of variables are defined inside the method as local variables not as instance variable otherwise gives error that not allowed here.
 `'var' is not allowed here`
+
+## Sealed Classes 
+
+1. Abstract classes : these classes have method definition but the classes which inherit it will define the these methods so we can say that these classes are meant to be inherit.
+
+2. final classes : these classes are the those classes which restrict itself to inherit that means no other class or interface can inherit it. We can say that this is the final implementation of the class 
+
+But in `Sealed classes` we can restrict the class or tell the class which classes or interfaces can inherit it and we can do it by the help of `sealed` keyword
