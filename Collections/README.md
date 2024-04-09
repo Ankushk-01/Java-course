@@ -55,3 +55,10 @@ it needs the object of `Predicate` interface to decide what to filter form the s
 3. `reduce():` this method do the functionality on the elements and it returns the datatype not the stream and it take two arguments.
 * starting value : in our case it was 0
 * lambda expression : what to do with the data. in our case we are adding the dat so it have 2 values 1. `c` which means carry which is the last result of the computation and `e` which stands for element which comes from the stream.
+
+
+# var keyword 
+this is introduced in java 10 and we can give the data type to `var` to a variable which means we are not specifying the data type of an variable but in the background the compiler find out the type of the variable and assign it by the value assigned to the variable.
+
+Note : 
+1. we need to initialized the `var` keyword variable as compiler used it to find out the data type of the variable other wise give the error of `cannot infer type for local variable`.
