@@ -79,3 +79,7 @@ note :
 2. the class which are extends the sealed class must have `sealed`, `non-sealed` or `final` class
 
 for more info. please refer [SealedClasses.java](./SealedClass.java)
+
+## Record 
+this are the special class which is used to store or carry the data from database to user or visa versa and they are easy to create and the complier do the rest in background means creating constructors, getters and setters and many more.
+for more info. refer this code [Records.java](./Records.java)
