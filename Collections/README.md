@@ -84,4 +84,10 @@ for more info. please refer [SealedClasses.java](./SealedClass.java)
 this are the special class which is used to store or carry the data from database to user or visa versa and they are easy to create and the complier do the rest in background means creating constructors, getters and setters and many more.
 1. you can implements the interface in `record` class but can not extends the class 
 2. record class by default extends the `record` class implicitly
+
+```bash
+record Student1(String name,int age){ }
+
+// here name and age are instance variables and they are final and private by default
+```
 for more info. refer this code [Records.java](./Records.java)
