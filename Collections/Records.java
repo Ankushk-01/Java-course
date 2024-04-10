@@ -6,32 +6,44 @@ public class Records {
         System.out.println(s2);
         Student s5 = new Student("Ankush", 23);
 
-        System.out.println("s1 and s2 are equals : "+s1.equals(s2));
-        System.out.println("s1 and s5 are equals : "+s1.equals(s5));
-        // both classes have same functionality 
+        System.out.println("s1 and s2 are equals : " + s1.equals(s2));
+        System.out.println("s1 and s5 are equals : " + s1.equals(s5));
+        // both classes have same functionality
 
         Student1 s3 = new Student1("Ankush", 23);
         System.out.println(s3);
         Student1 s4 = new Student1("Chandan", 22);
-        Student1 s6 = new Student1("", 10);
+        // Student1 s6 = new Student1("", 10);
         System.out.println(s4);
-        System.out.println("s3 and s4 are equals : "+s3.equals(s4));
+        System.out.println("s3 and s4 are equals : " + s3.equals(s4));
 
     }
 }
 
 record Student1(String name,int age){
 
-    public Student1(String name, int age){  // canonical constructor 
+    // public Student1(String name, int age){  // canonical constructor 
+    //     if (age == 0) {
+    //         throw new IllegalArgumentException("id can not be zero");
+    //     }else if (name.equals("") || name.equals(null)) {
+    //         throw new IllegalArgumentException("name can not be empty or null");
+    //     }
+    //     this.name = name;
+    //     this.age = age;
+    // }
+
+    // compact canonical constructor
+    
+    public Student1 {
         if (age == 0) {
             throw new IllegalArgumentException("id can not be zero");
         }else if (name.equals("") || name.equals(null)) {
             throw new IllegalArgumentException("name can not be empty or null");
         }
-        this.name = name;
-        this.age = age;
     }
- }  // same as Student class
+
+
+ } // same as Student class
 
 class Student {
     private String name;
@@ -90,10 +102,5 @@ class Student {
             return false;
         return true;
     }
-    
-    
-    
-    
-    
-    
+
 }
