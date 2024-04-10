@@ -13,13 +13,25 @@ public class Records {
         Student1 s3 = new Student1("Ankush", 23);
         System.out.println(s3);
         Student1 s4 = new Student1("Chandan", 22);
+        Student1 s6 = new Student1("", 10);
         System.out.println(s4);
         System.out.println("s3 and s4 are equals : "+s3.equals(s4));
 
     }
 }
 
-record Student1(String name,int age){ }  // same as Student class
+record Student1(String name,int age){
+
+    public Student1(String name, int age){  // canonical constructor 
+        if (age == 0) {
+            throw new IllegalArgumentException("id can not be zero");
+        }else if (name.equals("") || name.equals(null)) {
+            throw new IllegalArgumentException("name can not be empty or null");
+        }
+        this.name = name;
+        this.age = age;
+    }
+ }  // same as Student class
 
 class Student {
     private String name;
