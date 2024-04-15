@@ -11,3 +11,6 @@ we write the test cases to make sure that any new feature or enhancement will ne
 The unit means the group of functions or the classes which may have dependent logic or collection of them make a major part of the project we call it as a unit
 
 Junit is the platform and the `jupiter` is the api which is used by the project to use Junit literary when not included in the project.
+
+The `Junit5` is not backward compatible which means if we write the code in Junit4 it will not run in Junit5 directly.
+We need to use the `vintage` library to run the Junit 4 test cases in Junit 5.
