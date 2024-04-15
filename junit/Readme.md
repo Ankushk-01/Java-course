@@ -10,4 +10,4 @@ we write the test cases to make sure that any new feature or enhancement will ne
 
 The unit means the group of functions or the classes which may have dependent logic or collection of them make a major part of the project we call it as a unit
 
-Junit is the platform and the `jupiter` is the api which 
+Junit is the platform and the `jupiter` is the api which
