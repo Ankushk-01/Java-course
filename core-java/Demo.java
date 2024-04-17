@@ -6,6 +6,11 @@ public class Demo {
         int result = cal.add(num1, num2);
         System.out.println("result : "+result);
     }
+
+    public String reverseString(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'reverseString'");
+    }
 }
 
 
