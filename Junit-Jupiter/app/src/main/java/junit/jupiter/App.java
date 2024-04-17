@@ -8,7 +8,7 @@ public class App {
         return "Hello World!";
     }
     public String reverseString(String input){
-        String result = "";
+        StringBuffer result = new StringBuffer();
         char inputArr[] = input.toCharArray();
         int startIndex = 0;
         int lastIndex = inputArr.length-1;
@@ -16,9 +16,13 @@ public class App {
             char temp = inputArr[startIndex];
             inputArr[startIndex] = inputArr[lastIndex];
             inputArr[lastIndex] = temp;
+            startIndex++;
+            lastIndex--;
         }
-        result = inputArr.toString();
-        return result;
+        for(int i = 0;i<inputArr.length;i++){
+            result.append(inputArr[i]);
+        }
+        return result.toString();
     }
     public static void main(String[] args) {
         App a1 = new App();
