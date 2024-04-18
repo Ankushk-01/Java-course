@@ -11,4 +11,10 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+    @Test
+    void reverseStringTest(){
+        Demo d1 = new Demo();
+        assertEquals("hannah",d1.reverseString("hannah"));
+    }
 }

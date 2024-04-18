@@ -14,3 +14,5 @@ Junit is the platform and the `jupiter` is the api which is used by the project 
 
 The `Junit5` is not backward compatible which means if we write the code in Junit4 it will not run in Junit5 directly.
 We need to use the `vintage` library to run the Junit 4 test cases in Junit 5.
+
+In Junit 5 or Junit Jupiter the test method can be public,protected or default but in Junit 4 the test case must be `public`
