@@ -15,6 +15,6 @@ class AppTest {
     @Test
     void reverseStringTest(){
         Demo d1 = new Demo();
-        assertEquals("hannah",d1.reverseString("hannah"));
+        assertEquals("hannah",d1.reverseString("annah"));
     }
 }
