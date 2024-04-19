@@ -1,8 +1,9 @@
-package _JunitProject;
+package junit.jupiter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+
 
 public class UtilityTest {
     Utility utility = new Utility();

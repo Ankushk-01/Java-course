@@ -1,4 +1,4 @@
-package _JunitProject;
+package junit.jupiter;
 
 public class Utility {
     public String reverseString(String string){
