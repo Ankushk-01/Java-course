@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class UtilityTest {
     Utility utility = new Utility();
     @Test
-    void reverseStringTest(){
+    void reverseStringTest_one_word(){
         assertEquals("hannah", utility.reverseString("hannah"));
         assertEquals("Ankush", utility.reverseString("hsuknA"));
         assertEquals("1234", utility.reverseString("4321"));
@@ -21,7 +21,7 @@ public class UtilityTest {
     }
 
     @Test
-    void reverseString_multiwords(){
+    void reverseString_multiple_words(){
         assertEquals("tseb si hsuknA", utility.reverseString("Ankush is best"));
     }
 }
