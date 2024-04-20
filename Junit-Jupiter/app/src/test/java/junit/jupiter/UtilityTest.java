@@ -19,4 +19,9 @@ public class UtilityTest {
         assertEquals(4321, utility.reverseInteger(1234));
         assertEquals(44664321, utility.reverseInteger(12346644));
     }
+
+    @Test
+    void reverseString_multiwords(){
+        assertEquals("tseb si hsuknA", utility.reverseString("Ankush is best"));
+    }
 }
