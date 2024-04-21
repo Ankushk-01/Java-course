@@ -19,9 +19,20 @@ public class UtilityTest {
         assertEquals(4321, utility.reverseInteger(1234),"the reverse int value function is not working fine");
         assertEquals(44664321, utility.reverseInteger(12346644));
     }
+    @Test
+    void reverseIntegerTest(){
+        assertEquals(4321, utility.reverseInteger(1234),()->"the reverse int value function is not working fine");
+        assertEquals(44664321, utility.reverseInteger(12346644));
+    }
 
     @Test
     void reverseString_multiple_words(){
         assertEquals("tseb si hsuknA", utility.reverseString("Ankush is best"),"the multiline reverse string logic is failing");
+        // it evaluate the comment in each case it can be pass and fail
+    }
+    @Test
+    void reverseString_multiple_words_supplier_interface(){
+        assertEquals("tseb si hsuknA", utility.reverseString("Ankush is best"),()->"the multiline reverse string logic is failing"); // supplier interface 
+        // it evaluate the comment only when the test case is fails
     }
 }
