@@ -1,6 +1,7 @@
 package junit.jupiter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -38,5 +39,12 @@ public class UtilityTest {
     @Test
     void reverseString_multiple_words_supplier_interface(){
         assertNotEquals("best si hsuknA", utility.reverseString("Ankush is best"),()->"the multiline reverse string logic is failing"); // intensionally compare the wrong value to the result so that the functionality if changes in some edge case can be found out 
+    }
+
+    @Test
+
+    public void test(){
+        String str = "Ankush";
+        assertTrue(str.equals("Ankush"));
     }
 }
