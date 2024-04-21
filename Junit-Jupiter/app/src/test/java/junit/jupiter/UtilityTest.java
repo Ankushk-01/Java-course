@@ -37,6 +37,6 @@ public class UtilityTest {
     }
     @Test
     void reverseString_multiple_words_supplier_interface(){
-        assertNotEquals("best si hsuknA", utility.reverseString("Ankush is best"),()->"the multiline reverse string logic is failing"); // intensionaly compare the wrong value to the result so that the functionality if changes in some edge case can be found out 
+        assertNotEquals("best si hsuknA", utility.reverseString("Ankush is best"),()->"the multiline reverse string logic is failing"); // intensionally compare the wrong value to the result so that the functionality if changes in some edge case can be found out 
     }
 }
