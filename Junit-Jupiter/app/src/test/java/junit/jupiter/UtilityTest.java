@@ -1,6 +1,7 @@
 package junit.jupiter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ public class UtilityTest {
         assertEquals(44664321, utility.reverseInteger(12346644));
     }
     @Test
-    void reverseIntegerTest(){
+    void reverseIntegerTest_supplerMethod(){
         assertEquals(4321, utility.reverseInteger(1234),()->"the reverse int value function is not working fine");
         assertEquals(44664321, utility.reverseInteger(12346644));
     }
@@ -37,7 +38,7 @@ public class UtilityTest {
         // it evaluate the comment only when the test case is fails
     }
     @Test
-    void reverseString_multiple_words_supplier_interface(){
+    void reverseString_multiple_words_supplier_interface_notEquals(){
         assertNotEquals("best si hsuknA", utility.reverseString("Ankush is best"),()->"the multiline reverse string logic is failing"); // intensionally compare the wrong value to the result so that the functionality if changes in some edge case can be found out 
     }
 
