@@ -1,9 +1,12 @@
 package junit.jupiter;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
@@ -56,5 +59,13 @@ public class UtilityTest {
     @Test
     public void testReverseBooleanWithAssertFalse(){
         assertFalse(utility.reversBoolean(true));
+    }
+    @Test
+    public void testArrays(){
+        int expected[] = {2,4,6,8};
+        int actual[] = {8,2,6,4};
+        Arrays.sort(actual);
+        // assertEquals(expected, actual); // give false or test case as it matching the reference variable of the variables which are different
+        assertArrayEquals(expected, actual); // matching the values inside the both arrays
     }
 }
