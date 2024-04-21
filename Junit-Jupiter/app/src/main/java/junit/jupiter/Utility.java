@@ -18,4 +18,8 @@ public class Utility {
         }
         return reversedInt;
     }
+
+    public Boolean reversBoolean(Boolean input){
+        return !input;
+    }
 }

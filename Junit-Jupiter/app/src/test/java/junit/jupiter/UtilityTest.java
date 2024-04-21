@@ -1,6 +1,7 @@
 package junit.jupiter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -43,9 +44,17 @@ public class UtilityTest {
     }
 
     @Test
-
     public void test(){
         String str = "Ankush";
         assertTrue(str.equals("Ankush"));
+    }
+
+    @Test
+    public void testReverseBoolean(){
+        assertTrue(utility.reversBoolean(false));
+    }
+    @Test
+    public void testReverseBooleanWithAssertFalse(){
+        assertFalse(utility.reversBoolean(true));
     }
 }
