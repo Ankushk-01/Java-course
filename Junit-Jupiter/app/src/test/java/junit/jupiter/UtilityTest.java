@@ -11,15 +11,25 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class UtilityTest {
     Utility utility = new Utility();
 
+    @AfterAll 
+    static void dummy(){
+        System.out.println("after all");
+    }
+
+    @BeforeAll
+    static void beforeAll(){
+        System.out.println("before all");
+    }
     @BeforeEach
     void init(){
-        System.err.println("before each test case");
+        System.out.println("before each test case");
     }
     @AfterEach
     void destroy(){
