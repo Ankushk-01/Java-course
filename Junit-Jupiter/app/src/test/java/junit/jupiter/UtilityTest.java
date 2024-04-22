@@ -9,11 +9,22 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.lang.NullPointerException;
 import java.util.Arrays;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class UtilityTest {
     Utility utility = new Utility();
 
+    @BeforeEach
+    void init(){
+        System.err.println("before each test case");
+    }
+    @AfterEach
+    void destroy(){
+        System.out.println("after each test case");
+    }
     @Test
     void reverseStringTest_one_word() {
         assertEquals("hannah", utility.reverseString("hannah"),
