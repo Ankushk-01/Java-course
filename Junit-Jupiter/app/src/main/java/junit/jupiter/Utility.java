@@ -1,5 +1,5 @@
 package junit.jupiter;
-
+import java.util.Arrays;
 public class Utility {
     public String reverseString(String string){
         String reversedString = "";
@@ -21,5 +21,10 @@ public class Utility {
 
     public Boolean reversBoolean(Boolean input){
         return !input;
+    }
+
+    public int [] sortArray(int [] input){
+        Arrays.sort(input);
+        return input; 
     }
 }

@@ -68,4 +68,12 @@ public class UtilityTest {
         // assertEquals(expected, actual); // give false or test case as it matching the reference variable of the variables which are different
         assertArrayEquals(expected, actual); // matching the values inside the both arrays
     }
+
+    @Test 
+    public void sortArrayMethodTest(){
+        int [] input = {5,8,6,7,3,4};
+        int [] result = utility.sortArray(input); 
+        int [] expected = {3,4,5,6,7,8};
+        assertArrayEquals(expected, result);
+    }
 }
