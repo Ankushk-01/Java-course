@@ -13,3 +13,7 @@ In this notations we follow the worst case scenarios.
 # Linear Search 
 in linear Search we iterate over each element of the array and if the value match with the input then it return the index of that value so that is the reason the the time complexity of the Linear search is O (n).
 Where n means the number of elements. 
+
+# Binary Search
+
+In binary search the time complexity is o (log n).
