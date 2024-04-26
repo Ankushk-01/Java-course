@@ -19,4 +19,5 @@ Where n means the number of elements.
 
 # Binary Search
 
-In binary search the time complexity is o (log n).
+In binary search the time complexity is o (log n). which means that it not truly depends upon the size of the input data.
+but the drawback is it works only on sorted array.
