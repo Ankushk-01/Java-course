@@ -16,6 +16,7 @@ It measures the how the running time of an Algorithm increases with the size of 
 # Linear Search 
 in linear Search we iterate over each element of the array and if the value match with the input then it return the index of that value so that is the reason the the time complexity of the Linear search is O (n).
 Where n means the number of elements. 
+It not need the sorted array it can work on un sorted array
 
 # Binary Search
 
