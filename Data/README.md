@@ -16,9 +16,12 @@ It measures the how the running time of an Algorithm increases with the size of 
 # Linear Search 
 in linear Search we iterate over each element of the array and if the value match with the input then it return the index of that value so that is the reason the the time complexity of the Linear search is O (n).
 Where n means the number of elements. 
-It not need the sorted array it can work on un sorted array
+It not need the sorted array it can work on un sorted array. For small size data it is works good but for larger number of data it take time.
 
 # Binary Search
 
 In binary search the time complexity is o (log n). which means that it not truly depends upon the size of the input data.
 but the drawback is it works only on sorted array.
+
+It works well as compare to linear search when the data is large.
+for more info refer to [BinarySearch.java](./BinarySearch.java)
