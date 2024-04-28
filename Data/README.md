@@ -25,3 +25,14 @@ but the drawback is it works only on sorted array.
 
 It works well as compare to linear search when the data is large.
 for more info refer to [BinarySearch.java](./BinarySearch.java)
+
+# Bubble sort
+In bubble sort we compare two elements and if the first is smaller then one we do swap and we do this until we reach the array length.
+The time complexity of the algorithm is O (n^2).
+
+# Selection Sort 
+In the selection sort we only do the swapping when we find the largest or smallest value of the array and we move that value to the first or last of the array as per our need.
+it also have the time complexity of O (n^2).
+but it is better then the bubble sort as it is not doing swapping at every interval.
+
+for more info refer to [SelectionSOrt.java](./SelectionSort.java)
