@@ -36,3 +36,8 @@ it also have the time complexity of O (n^2).
 but it is better then the bubble sort as it is not doing swapping at every interval.
 
 for more info refer to [SelectionSOrt.java](./SelectionSort.java)
+
+# Quick sort
+In quick sort the best case goes to O (n log n) but in worst case it goes to O (n^2).
+So it is good as compare to bubble sort,Selection sort or Insertion sort.
+for more info [InsertionSort.java](./InsertionSort.java)
