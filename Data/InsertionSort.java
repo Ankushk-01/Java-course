@@ -2,7 +2,7 @@ package Data;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] input = { 2, 5, 3, 1, 7, 6, 4, 9 };
+        int[] input = { 21, 5, 3, 1, 7, 6, 4, 9,2 };
         System.out.println("before sorting");
         for (int element : input) {
             System.out.print(element + " ");
