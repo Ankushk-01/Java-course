@@ -7,7 +7,12 @@ public class QuickSort {
         for (int element : input) {
             System.out.print(element + " ");
         }
+        System.out.println();
         quickSort(input,0,input.length-1);
+        System.out.println("After sorting");
+        for (int element : input) {
+            System.out.print(element + " ");
+        }
     }
 
     private static void quickSort(int[] input,int low ,int high) {
