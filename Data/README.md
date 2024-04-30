@@ -41,6 +41,7 @@ for more info refer to [SelectionSOrt.java](./SelectionSort.java)
 In quick sort the best case goes to O (n log n) but in worst case it goes to O (n^2).
 So it is good as compare to bubble sort,Selection sort or Insertion sort.
 It based on the divide and conquer technique and it is implemented by the help of recursion.
+It use only one loop and runs parallel so it is good to use but hard to remember the logic.
 ## Divide and Conquer :
 It means that divide the problem into two parts and then divide the two parts into another parts by doing this we make problem smaller and smaller. Thus it make it easy to solve.
 for more info [InsertionSort.java](./InsertionSort.java)
