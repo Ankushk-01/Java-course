@@ -45,3 +45,9 @@ It use only one loop and runs parallel so it is good to use but hard to remember
 ## Divide and Conquer :
 It means that divide the problem into two parts and then divide the two parts into another parts by doing this we make problem smaller and smaller. Thus it make it easy to solve.
 for more info [InsertionSort.java](./InsertionSort.java)
+
+# Merge sort
+
+In merge sort we also use the divide and conquer technique and it simply divide the array in to two parts until the array have only one value. Then the merging part start it simply compare the both the value of the arrays with each other then create a array which will store the sorted value at the end return the array.
+
+for more info [MergeSort.java](./MergeSort.java)
