@@ -50,4 +50,6 @@ for more info [InsertionSort.java](./InsertionSort.java)
 
 In merge sort we also use the divide and conquer technique and it simply divide the array in to two parts until the array have only one value. Then the merging part start it simply compare the both the value of the arrays with each other then create a array which will store the sorted value at the end return the array.
 
+the compare part is the most difficult one and it use the two arrays which have the values which we will compare and we push the smallest value to the left.
+
 for more info [MergeSort.java](./MergeSort.java)
