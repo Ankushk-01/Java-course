@@ -53,3 +53,9 @@ In merge sort we also use the divide and conquer technique and it simply divide 
 the compare part is the most difficult one and it use the two arrays which have the values which we will compare and we push the smallest value to the left.
 
 for more info [MergeSort.java](./MergeSort.java)
+
+# LinkedList
+
+Linked list have feature of expandability which mean we can add the elements at any position in the linked list but it was not possible in arrays.
+But also it is slow as it stores the memory location of the next element and compiler will go to that location.
+The memory address are normally sequential.
