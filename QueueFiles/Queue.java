@@ -11,7 +11,7 @@ public class Queue {
 			return;
 		}else {
 			queue[rare] = data;
-			rare++;
+			rare = (rare+1)%5;
 			size++;
 		}
 	}
@@ -24,7 +24,7 @@ public class Queue {
 		}else {
 			value = queue[front];
 			queue[front] = 0;
-			front++;
+			front = (front+1)%5;
 			size--;
 		}
 		return value;
