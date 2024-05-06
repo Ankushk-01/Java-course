@@ -34,11 +34,24 @@ public class DStack {
 			System.out.println("Stack is empty");
 			return -1;
 		}
+		shrink();
 		int data = stack[top - 1];
 		stack[top - 1] = 0;
 		top--;
 		return data;
 
+	}
+
+	private void shrink() {
+		int length = size();
+		 if(length <= (capacity/2)/2) {
+			 capacity = capacity/2;
+			 int [] newStack = new int[capacity];
+			 for(int i =0;i<capacity;i++) {
+				 newStack[i] = stack[i];
+			 }
+			 stack = newStack;
+		 }
 	}
 
 	public int peek() {
