@@ -6,7 +6,7 @@ public class Queue {
 	private int rare = 0;
 	private int size =0;
 	public void enQueue(int data) {
-		if(rare ==5) {
+		if(isFull()) {
 			System.out.println("Queue is fulled");
 			return;
 		}else {
@@ -18,7 +18,7 @@ public class Queue {
 	
 	public int deQueue() {
 		int value = 0;
-		if(rare==0) {
+		if(isEmpty()) {
 			System.out.println("Queue is empty");
 			return -1;
 		}else {
@@ -40,6 +40,9 @@ public class Queue {
 		return size;
 	}
 	public Boolean isEmpty(){
-		return size==0?true : false;
+		return size==0;
+	}
+	public Boolean isFull(){
+		return size ==5;
 	}
 }
