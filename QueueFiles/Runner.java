@@ -17,5 +17,6 @@ public class Runner {
 		queue.enQueue(5);
 		queue.enQueue(6);
 		queue.show();
+		System.out.println("The size : "+queue.size());
 	}
 }
