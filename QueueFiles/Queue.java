@@ -39,4 +39,7 @@ public class Queue {
 	public int size() {
 		return size;
 	}
+	public Boolean isEmpty(){
+		return size==0?true : false;
+	}
 }
