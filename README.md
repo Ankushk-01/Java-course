@@ -97,3 +97,16 @@ public void setCost(String cost){
 
 we can make the inner class as static but can't make the outer class static as only public,abstract or final keyword are allowed for the outer class.
 as we need an object to instalize the `child` class. So we need to create the outer class non static 
+
+## JDBC 
+java data base connection 
+
+We need to follow the 7 steps which are given below :
+
+1. Import the package or we can say jdbc dependency
+2.  load or register the driver (Optional)
+3. Establish the connection
+4. create the statement
+5. Execute the statement
+6. Process the result
+7. close the connection 
