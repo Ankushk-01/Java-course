@@ -115,4 +115,4 @@ We need to follow the 7 steps which are given below :
 
 1. Statement
 2. PrepareStatement
-3. Callable Statement 
+3. Callable Statement  :- It is used for the PL (Procedural Query) or we can say it is used for Store Procedure
