@@ -110,3 +110,9 @@ We need to follow the 7 steps which are given below :
 5. Execute the statement
 6. Process the result
 7. close the connection 
+
+### Different types of statement
+
+1. Statement
+2. PrepareStatement
+3. Callable Statement 
