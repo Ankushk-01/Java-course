@@ -71,8 +71,8 @@ But the class loaded at one and there is a special area where all the classes ar
 
 ## Static method 
 
-we can access the static variables in the static method but can not the instance variables we can do that we take object of that class then use the instace variables of that Ref. [StaticMethod.java](./Classes/StaticMethod.java)
-and also we need to set the method access to public then the method can be accessable to the child or other classess.
+we can access the static variables in the static method but can not the instance variables we can do that we take object of that class then use the instance variables of that Ref. [StaticMethod.java](./Classes/StaticMethod.java)
+and also we need to set the method access to public then the method can be accessible to the child or other classes.
 
 ## Encapsulation 
 
@@ -81,7 +81,7 @@ for reference look this file : [Encapsulation](./Classes/StaticMethod.java)
 
 ### Private variables and method
 
-The private keyword simpily set the scope to the class level only means we can use then inside the class only use in the sense we can set or get values in that only
+The private keyword simply set the scope to the class level only means we can use then inside the class only use in the sense we can set or get values in that only
 
 ### this keyword : 
 `this keyword` is only used when we have same name of our instance variable and the local variable inside an method so we need to tell the jvm that which one is our instance and local variable and we can do by tell the instance variable by start with `this.` 
