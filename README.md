@@ -43,12 +43,12 @@ It is used to ruplicate the simple condition within one line but it is not the a
 
 ## Veriable 
 
-1. `Inatance Veriable` : The variable define in the class and outside any method is called instance variables and when the object is created each time this variable is assigned to them.
-if we update the varaible of an one object it will not affect the other object's varialbes.
+1. `Instance Variable` : The variable define in the class and outside any method is called instance variables and when the object is created each time this variable is assigned to them.
+if we update the variable of an one object it will not affect the other object's variables.
 
-2. `Local veriables` : The variable defined in side the method it is called the local variable and it is created and deleted when the method called.
+2. `Local variables` : The variable defined in side the method it is called the local variable and it is created and deleted when the method called.
 
-the instace variable created in Heap memory and the local variable created in stack memory.
+the instance variable created in Heap memory and the local variable created in stack memory.
 
 ## Exceptions
 
