@@ -60,11 +60,11 @@ Types :
 1. Mutable Strings : We can use different classes to create mutable string `StringBuilder` or `StringBuffer` 
 `StringBuffer` it is tread safe but `StringBuilder` is not.
 
-2. Imutable Strings : By default the strings are Immutalble.
+2. Immutable Strings : By default the strings are Immutable.
 
 When the Object is created two steps are followed :
 1. Class Loaded 
-2. Object Initalized 
+2. Object Initialized 
 
 But the class loaded at one and there is a special area where all the classes are loaded and it is called `Class Loader` so that is why the static block is loaded once because it static block belongs to the class.
 
