@@ -24,18 +24,18 @@ we need to tell the compiler explicitly that store this value as `float` by addi
 
 # Literals 
 
-The values assigned to the variables are called `literals` and we can do many things with them as show in file [Literls.java](./Literals.java).
+The values assigned to the variables are called `literals` and we can do many things with them as show in file [Literals.java](./Literals.java).
 
 # Casting 
 
-When we do the explicit casting of an data type then it is called `Casting` and we can do it only with comapatable types like we cant do it with bool to char or visa versa
+When we do the explicit casting of an data type then it is called `Casting` and we can do it only with compatible types like we cant do it with bool to char or visa versa
 
 1. We can't do the casting with boolean data type to float or int it is not possible
 2. We can do it when the first type is of `int,float,short,byte` to `double,long`
 
-# Type Permossion 
+# Type Permission  
 
-When we do some computation and the data type excedded then the java automatically permote the type to upper data type like from `byte` to `int` for example see this file [Casting.java](Casting.java).
+When we do some computation and the data type exceeded then the java automatically promote the type to upper data type like from `byte` to `int` for example see this file [Casting.java](Casting.java).
 
 ## Ternary Operator  
 
