@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		String url = "jdbc:mysql://localhost:3306/sakila";
 		String uname = "root";
-		String pass = "root@123";
+		String pass = "Ankush@123";
 		String query = "SELECT `name` FROM language where language_id = 5;";
 		Connection con = null;
 		Statement stmt = null;
