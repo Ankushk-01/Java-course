@@ -1,6 +1,6 @@
 New Course i have started to learn java with spring and many more
 
-After the jdk 9 we can run the java code with out creating the java file and we can do so by running the code in `java Shell` by running the following command on CMD:
+After the jdk 9 we can run the java code without creating the java file and we can do so by running the code in `java Shell` by running the following command on CMD:
 
 ```bash
     jshell
@@ -28,10 +28,10 @@ The values assigned to the variables are called `literals` and we can do many th
 
 # Casting 
 
-When we do the explicit casting of an data type then it is called `Casting` and we can do it only with compatible types like we cant do it with bool to char or visa versa
+When we do the explicit casting of data type then it is called `Casting` and we can do it only with compatible types like we can't do it with bool to char or visa versa
 
 1. We can't do the casting with boolean data type to float or int it is not possible
-2. We can do it when the first type is of `int,float,short,byte` to `double,long`
+2. We can do it when the first type is of `int,float,short,byte` to `double, long`
 
 # Type Permission  
 
@@ -96,14 +96,14 @@ public void setCost(String cost){
 ## inner class
 
 we can make the inner class as static but can't make the outer class static as only public,abstract or final keyword are allowed for the outer class.
-as we need an object to instalize the `child` class. So we need to create the outer class non static 
+as we need an object to instalize the `child` class. So we need to create the outer class non-static 
 
 ## JDBC 
 java data base connection 
 
 We need to follow the 7 steps which are given below :
 
-1. Import the package or we can say jdbc dependency
+1. Import the package or we can say JDBC dependency
 2.  load or register the driver (Optional)
 3. Establish the connection
 4. create the statement
@@ -115,4 +115,4 @@ We need to follow the 7 steps which are given below :
 
 1. Statement
 2. PrepareStatement
-3. Callable Statement  :- It is used for the PL (Procedural Query) or we can say it is used for Store Procedure
+3. Callable Statement:- It is used for the PL (Procedural Query) or we can say it is used for Store Procedure
