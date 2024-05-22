@@ -16,3 +16,10 @@ the process inside the server is called `web container` and a configuration file
 To create a Servlet we first need a Server for that we can use the `apache tomcat`. 
 We can create a project in Eclipse ide for servlet for that we need to follow the below steps:
 1. Create a Dynamic Web Project Click Files > Dynamic web Project
+if the option is not shown then follow these steps :
+Click on Help > Eclipse Workspace 
+then type `web tools` then select one and click install
+Restart the IDE 
+Then go to the windows > show more > Servers
+
+we will see the `Server` tab in the terminal connect it with the `tomcat server`.
