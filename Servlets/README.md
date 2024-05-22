@@ -12,3 +12,7 @@ The servlet process must need to extends the `HttpServlet` class.
 Inside the Server we can have multiple servlets.
 
 the process inside the server is called `web container` and a configuration file `web.xml` which tell the server for which end point we need to go to which servlet. The `web.xml` file also called the `deployment descriptor`.
+
+To create a Servlet we first need a Server for that we can use the `apache tomcat`. 
+We can create a project in Eclipse ide for servlet for that we need to follow the below steps:
+1. Create a Dynamic Web Project Click Files > Dynamic web Project
