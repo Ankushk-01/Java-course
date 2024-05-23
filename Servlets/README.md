@@ -23,3 +23,4 @@ Restart the IDE
 Then go to the windows > show more > Servers
 
 we will see the `Server` tab in the terminal connect it with the `tomcat server`.
+
