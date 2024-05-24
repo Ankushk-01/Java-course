@@ -9,7 +9,7 @@ When a client sends the request to the Server. Server have two options which are
 
 The servlet is a java based program which runs and generate the dynamic web page.It take the input as the client request and generate the response accordingly.
 The servlet process must need to extends the `HttpServlet` class.
-Inside the Server we can have multiple servlets.
+Inside the Server we can have multiple servlet.
 
 the process inside the server is called `web container` and a configuration file `web.xml` which tell the server for which end point we need to go to which servlet. The `web.xml` file also called the `deployment descriptor`.
 
