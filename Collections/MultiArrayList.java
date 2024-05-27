@@ -25,5 +25,7 @@ public class MultiArrayList {
         bucketList.add(fruitList);
         bucketList.add(bakeryList);
         System.out.println("bucketList : "+bucketList);
+        System.out.println("groceryList : "+bucketList.get(0));
+        System.out.println("bucketList size : "+bucketList.size());
     }
 }
