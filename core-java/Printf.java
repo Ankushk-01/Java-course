@@ -22,7 +22,9 @@ public class Printf {
         System.out.printf("the int value is :  %d",num);
         System.out.printf("the String value is :  %s",name);
         System.out.printf("the float value is :  %f",pie);
-        
+        System.out.println();
+        System.out.printf("hello %10s",name);
+        // %10s makes the minimum string length to 10 and it will add whitespace if the string is short 
 
     }
 }
