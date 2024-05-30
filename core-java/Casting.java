@@ -7,7 +7,7 @@ public class Casting {
         byte byteCount = (byte)count;
         System.out.println("byteCount : "+byteCount);
 
-        // Type Permossions
+        // Type Premonitions
 
         byte num1 = 30;
         byte num2 = 10;
