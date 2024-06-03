@@ -9,13 +9,18 @@ public class ReadFiles {
         try {
             FileReader fileReader = new FileReader("Text.txt");
             int result = fileReader.read();
-            while (result!=-1) {
-                
+            while (result != -1) {
+                System.out.print((char)result);
+                result = fileReader.read();
             }
-            catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-        } catch (IOException e) {
+            System.out.println();
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }catch(Exception e){
             e.printStackTrace();
         }
     }
