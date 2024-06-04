@@ -14,6 +14,8 @@ public class Frames {
         ImageIcon image = new ImageIcon("logo.jpg");
         jFrame.setIconImage(image.getImage());
         jFrame.setBackground(Color.GRAY);
+        jFrame.setResizable(false);
+        // jFrame.getContentPane().setBackground(Color.black);
         jFrame.setSize(420,420); // Set Dimensions 
         jFrame.setVisible(true); // It will visible the frame
     }
