@@ -30,7 +30,7 @@ public class JLabelClass {
 
             JFrame jFrame = new JFrame(); // create a JFrame
             jFrame.setTitle("Welcome page");
-            // jFrame.setSize(500, 500);
+            jFrame.setSize(500, 500);
             jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             ImageIcon icon = new ImageIcon("logo.jpg");
             jFrame.setIconImage(icon.getImage());
