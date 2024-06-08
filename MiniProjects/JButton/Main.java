@@ -17,13 +17,15 @@ class MyFrame extends JFrame{
     MyFrame(){
         button = new JButton("Click here to poo");
         button.addActionListener(e -> System.out.println("Poo"));
-        button.setBounds(100,100,200,100); 
-        button.setForeground(Color.blue);
+        button.setBounds(200,100,100,50); 
+        button.setFocusable(false);
+
         this.setTitle("Demo JFrame");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close when click on cross button
         this.setSize(500,500); // Set Dimensions  
         this.setVisible(true); // It will visible the frame 
-        this.getLayeredPane().setBackground(Color.white);
-        this.add(button);
+        // this.getLayeredPane().setBackground(Color.white);
+        this.setLayout(null);
+        this.add(button); 
     }
 }
