@@ -1,10 +1,10 @@
-package MiniProjects.FloatLayout;
+package MiniProjects.FlowLayout;
 import java.awt.FlowLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class FloatLayoutClass {
+public class FlowLayoutClass {
     public static void main(String[] args) {
         JFrame frame = new JFrame(); 
         frame.setTitle("Demo JFrame");
