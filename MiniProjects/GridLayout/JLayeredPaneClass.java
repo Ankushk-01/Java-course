@@ -24,8 +24,8 @@ public class JLayeredPaneClass {
         label3.setBounds(150,150,200,200);
 
         JLayeredPane layeredPane = new JLayeredPane();
-        layeredPane.add(label1,JLayeredPane.DEFAULT_LAYER);
-        layeredPane.add(label2,JLayeredPane.DRAG_LAYER);
+        layeredPane.add(label1,JLayeredPane.DEFAULT_LAYER); // Lowest priority
+        layeredPane.add(label2,JLayeredPane.DRAG_LAYER); // Highest priority 
         layeredPane.add(label3,JLayeredPane.SOMEBITS);
 
         JFrame frame = new JFrame(); 
