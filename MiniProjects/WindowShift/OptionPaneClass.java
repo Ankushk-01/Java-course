@@ -4,11 +4,10 @@ import javax.swing.JOptionPane;
 
 public class OptionPaneClass {
     public static void main(String[] args) {
-        JOptionPane pane = new JOptionPane();
         JOptionPane.showMessageDialog(null, "New Message Arrived", "Notification", JOptionPane.PLAIN_MESSAGE);
-        // JOptionPane.showMessageDialog(null, "You got 7 new messages", "FYI", JOptionPane.INFORMATION_MESSAGE);
-        // JOptionPane.showMessageDialog(null, "Do you want to delete this message", "Alert", JOptionPane.QUESTION_MESSAGE);
-        // JOptionPane.showMessageDialog(null, "Security is compromised", "DANGER", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, "You got 7 new messages", "FYI", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Do you want to delete this message", "Alert", JOptionPane.QUESTION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Security is compromised", "DANGER", JOptionPane.ERROR_MESSAGE);
         // JOptionPane.showMessageDialog(null, "Virus detected", "WARNING", JOptionPane.WARNING_MESSAGE);
         // int result = JOptionPane.showConfirmDialog(null, "Do you agree with the privacy policies ?", "INFO", JOptionPane.YES_NO_OPTION);
         // if (result == 0) {
