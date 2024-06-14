@@ -50,13 +50,13 @@ class MyFrame extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == pizza) {
-            label.setText("Your pizza is coming");
+            label.setText("Pizza order is confirmed");
         }
         else if (e.getSource()==burger) {
-            label.setText("Your burger is coming");
+            label.setText("Burger order is confirmed");
         }
         else{
-            label.setText("Your momos is coming");
+            label.setText("Momos order is confirmed");
         } 
     }
 }
