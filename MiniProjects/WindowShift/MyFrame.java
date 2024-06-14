@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener; 
-public class MyFrame extends JFrame implements ActionListener{
+public class MyFrame implements ActionListener{
     JFrame frame = new JFrame();
     MyFrame() {
         // button
