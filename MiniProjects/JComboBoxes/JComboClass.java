@@ -22,8 +22,8 @@ class MyFrame extends JFrame implements ActionListener{
         comboBox.addActionListener(this);
 
         comboBox.addItem("Pig");
-        
-
+        comboBox.setEditable(true);
+        comboBox.setSelectedIndex(2);
         this.add(comboBox);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
