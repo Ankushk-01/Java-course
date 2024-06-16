@@ -50,7 +50,7 @@ class MyFrame implements ChangeListener{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
         frame.add(panel);
-        // frame.setLayout(new FlowLayout()); 
+        frame.setLayout(new FlowLayout());  
         frame.setVisible(true);
 
     }
