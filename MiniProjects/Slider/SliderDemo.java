@@ -46,6 +46,7 @@ class MyFrame implements ChangeListener{
 
         panel.add(label); 
         panel.add(slider);
+        
         // Frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
