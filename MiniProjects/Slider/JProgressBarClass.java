@@ -23,7 +23,7 @@ class MyFrame {
         bar = new JProgressBar();
         bar.setValue(0);
         bar.setBounds(0,30,500,70);
-        bar.setStringPainted(true);
+        bar.setStringPainted(true); // print the progress status like _% 
         // Frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
