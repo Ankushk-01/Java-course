@@ -1,5 +1,6 @@
 package MiniProjects.Slider;
 
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -10,6 +11,7 @@ import java.awt.MenuBar;
 import java.awt.MenuItem;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 public class JMenuBarClass {
     public static void main(String[] args) {
@@ -52,7 +54,7 @@ class MyFrame implements ActionListener{
         // initialization
         frame = new JFrame("Menu Bar Demo"); 
         label = new JLabel("Text");
-        label.setBounds(20,100,400,250);
+        label.setBounds(20,100,400,100);
         label.setFont(new Font("Roboto",Font.BOLD,50)); 
         label.setForeground(Color.BLUE);
         // Frame
@@ -67,14 +69,31 @@ class MyFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        JFileChooser fileChooser = new JFileChooser("."); // project directory
         if (e.getSource() == exit) {
             System.out.println("Exiting system");
             System.exit(0);
         }else if (e.getSource()== openFile) {
             label.setText("opening file");
+            int response = fileChooser.showOpenDialog(null);
+            if (response == JFileChooser.APPROVE_OPTION) {
+                File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+                System.out.println("File path : "+file.getAbsolutePath());
+                label.setText(file.getAbsolutePath());
+            }else{
+                label.setText("File is not selected");
+            }
         }
-        else{
-            label.setText("Save file to disk");
+        else if(e.getSource()== saveFile){
+            label.setText("opening file");
+            int response = fileChooser.showSaveDialog(null);
+            if (response == JFileChooser.APPROVE_OPTION) {
+                File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+                System.out.println("File path : "+file.getAbsolutePath());
+                label.setText(file.getAbsolutePath());
+            }else{
+                label.setText("File is not selected");
+            }
         }
     }
 } 
