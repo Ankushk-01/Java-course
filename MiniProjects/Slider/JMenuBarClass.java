@@ -1,19 +1,19 @@
 package MiniProjects.Slider;
 
 import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
+import javax.swing.JLabel;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Menu;
 import java.awt.MenuBar;
 import java.awt.MenuItem;
-import java.awt.MenuShortcut;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class JMenuBarClass {
     public static void main(String[] args) {
-        MyFrame frame = new MyFrame(); 
+        MyFrame frame = new MyFrame();
     }
 }
 
@@ -24,6 +24,7 @@ class MyFrame implements ActionListener{
     MenuItem openFile;
     MenuItem saveFile;
     MenuItem exit;
+    JLabel label;
     MyFrame() {
         // menu bar
         menuBar = new MenuBar();
@@ -49,12 +50,17 @@ class MyFrame implements ActionListener{
         saveFile.addActionListener(this);
         exit.addActionListener(this);
         // initialization
-        frame = new JFrame("Progress Bar Demo"); 
+        frame = new JFrame("Menu Bar Demo"); 
+        label = new JLabel("Text");
+        label.setBounds(20,100,400,250);
+        label.setFont(new Font("Roboto",Font.BOLD,50)); 
+        label.setForeground(Color.BLUE);
         // Frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
         frame.setLayout(null);
         frame.setMenuBar(menuBar);
+        frame.add(label);
         frame.setVisible(true); 
 
     }
@@ -64,6 +70,11 @@ class MyFrame implements ActionListener{
         if (e.getSource() == exit) {
             System.out.println("Exiting system");
             System.exit(0);
+        }else if (e.getSource()== openFile) {
+            label.setText("opening file");
+        }
+        else{
+            label.setText("Save file to disk");
         }
     }
 } 
