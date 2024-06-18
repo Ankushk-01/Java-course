@@ -48,6 +48,7 @@ class MyFrame {
             } 
             counter+=10; 
         }
+        // bar.setString("Done...");
         fill();
     }
 } 
