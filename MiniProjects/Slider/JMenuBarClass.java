@@ -8,6 +8,8 @@ import java.awt.Menu;
 import java.awt.MenuBar;
 import java.awt.MenuItem;
 import java.awt.MenuShortcut;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class JMenuBarClass {
     public static void main(String[] args) {
@@ -16,9 +18,12 @@ public class JMenuBarClass {
 }
 
 
-class MyFrame {
+class MyFrame implements ActionListener{
     JFrame frame;
     MenuBar menuBar;
+    MenuItem openFile;
+    MenuItem saveFile;
+    MenuItem exit;
     MyFrame() {
         // menu bar
         menuBar = new MenuBar();
@@ -31,14 +36,18 @@ class MyFrame {
         menuBar.add(helpMenu);
 
         // Menu Items
-        MenuItem openFile = new MenuItem("Open File");
-        MenuItem saveFile = new MenuItem("Save File");
-        MenuItem exit = new MenuItem("Exit");
+        openFile = new MenuItem("Open File");
+        saveFile = new MenuItem("Save File");
+        exit = new MenuItem("Exit");
 
         fileMenu.add(openFile);
         fileMenu.add(saveFile);
         fileMenu.add(exit);
 
+        // add action listener
+        openFile.addActionListener(this);
+        saveFile.addActionListener(this);
+        exit.addActionListener(this);
         // initialization
         frame = new JFrame("Progress Bar Demo"); 
         // Frame
@@ -48,5 +57,13 @@ class MyFrame {
         frame.setMenuBar(menuBar);
         frame.setVisible(true); 
 
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == exit) {
+            System.out.println("Exiting system");
+            System.exit(0);
+        }
     }
 } 
