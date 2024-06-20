@@ -36,31 +36,31 @@ class MyFrame extends JFrame implements KeyListener {
         // TODO Auto-generated method stub
     }
 
-    // @Override
-    // public void keyPressed(KeyEvent e) {
-    //     switch (e.getKeyCode()) {
-    //         case 38:
-    //             label.setLocation(label.getX(), label.getY()-5);
-    //             break;
-    //         case 40:
-    //             label.setLocation(label.getX(), label.getY()+5);
-    //             break;
-    //         case 37:
-    //             label.setLocation(label.getX()-5, label.getY());
-    //             break;
-    //         case 39:
-    //             label.setLocation(label.getX()+5, label.getY());
-    //             break;
+    @Override
+    public void keyPressed(KeyEvent e) {
+        switch (e.getKeyCode()) {
+            case 38:
+                label.setLocation(label.getX(), label.getY()-5);
+                break;
+            case 40:
+                label.setLocation(label.getX(), label.getY()+5);
+                break;
+            case 37:
+                label.setLocation(label.getX()-5, label.getY());
+                break;
+            case 39:
+                label.setLocation(label.getX()+5, label.getY());
+                break;
         
-    //         default:
-    //             break;
-    //     }
-    // }
+            default:
+                break;
+        }
+    }
 
-    // @Override
-    // public void keyReleased(KeyEvent e) {
-    //     System.out.println("Key released : "+e.getKeyChar());
-    //     System.out.println("Key released code : "+e.getKeyCode());
-    // }
+    @Override
+    public void keyReleased(KeyEvent e) {
+        System.out.println("Key released : "+e.getKeyChar());
+        System.out.println("Key released code : "+e.getKeyCode());
+    }
 
 }
