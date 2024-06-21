@@ -1,3 +1,4 @@
+package Vectors;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
@@ -18,7 +19,11 @@ public class VectorsCLass {
 
         System.out.println("Vector size : "+vectorList.size());
         System.out.println("Time taken to add the values in vector : "+(endTime-startTime));
+        int value = vectorList.remove(999);
+        System.out.println("Value : "+value);
 
+        vectorList.clear();
+        // System.out.println("Vector List : "+vectorList.toString());
         List<Integer> arrayList = new ArrayList<>();
         startTime = System.currentTimeMillis();
         size = 1_000_000;
