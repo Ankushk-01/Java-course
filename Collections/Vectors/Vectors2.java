@@ -15,6 +15,9 @@ public class Vectors2 {
         System.out.println("Vector : "+v1.toString());
         Collections.sort(v1); 
         System.out.println("Vector : "+v1.toString());
+        System.out.println("vector size : "+v1.size());
+        v1.trimToSize();
+        System.out.println("vector size : "+v1.size());
 
     }
 }

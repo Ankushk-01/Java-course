@@ -8,10 +8,7 @@ public class VectorsCLass {
         // Vectors take much time to add the values as compare to the ArrayList
         List<Integer> vectorList = new Vector<>();
         long startTime = System.currentTimeMillis();
-        int size = 1_000_000;
-        for(int i = 0;i<size;i++){
-            vectorList.add(i);
-        }
+        int size = 2_000_000;
         for(int i = 0;i<size;i++){
             vectorList.add(i);
         }
@@ -26,10 +23,6 @@ public class VectorsCLass {
         // System.out.println("Vector List : "+vectorList.toString());
         List<Integer> arrayList = new ArrayList<>();
         startTime = System.currentTimeMillis();
-        size = 1_000_000;
-        for(int i = 0;i<size;i++){
-            arrayList.add(i);
-        }
         for(int i = 0;i<size;i++){
             arrayList.add(i);
         }
