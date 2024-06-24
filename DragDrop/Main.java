@@ -34,13 +34,13 @@ class DragPanel extends JPanel{
     Point imageCorners;
     Point Prevpt;
 
-    // DragPanel(){
-    //     imageCorners = new Point(0,0);
-    //     MouseClickAdapter mouseClick = new MouseClickAdapter();
-    //     MouseMovementAdapter mouseMovement = new MouseMovementAdapter();
-    //     this.addMouseListener(mouseClick);
-    //     this.addMouseMotionListener(mouseMovement);
-    // }
+    DragPanel(){
+        imageCorners = new Point(0,0);
+        MouseClickAdapter mouseClick = new MouseClickAdapter();
+        MouseMovementAdapter mouseMovement = new MouseMovementAdapter();
+        this.addMouseListener(mouseClick);
+        this.addMouseMotionListener(mouseMovement);
+    }
 
     private void ColorComponent(Graphics g){
 
