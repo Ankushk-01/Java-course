@@ -4,9 +4,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
 public class Main {
@@ -20,7 +22,6 @@ class MyFrame extends JFrame {
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 600);
-        this.setLayout(null);
         this.setTitle("Mini Project");
         this.add(panel);
         this.setVisible(true);
@@ -31,8 +32,8 @@ class DragPanel extends JPanel{
     ImageIcon icon = new ImageIcon("logo.png");
     final int WEITH = icon.getIconWidth();
     final int HEIGHT = icon.getIconHeight();
-    Point imageCorners;
-    Point Prevpt;
+    Point imageCorners; 
+    Point PrevPt;
 
     DragPanel(){
         imageCorners = new Point(0,0);
@@ -42,15 +43,28 @@ class DragPanel extends JPanel{
         this.addMouseMotionListener(mouseMovement);
     }
 
-    private void ColorComponent(Graphics g){
-
+    public void paintComponent(Graphics g){
+        super.paintComponents(g);
+        icon.paintIcon(this, g, (int)imageCorners.getX(), (int) imageCorners.getY());
     }
 
     private class MouseClickAdapter extends MouseAdapter{
-        
+        public void mousePressed(MouseEvent e) {
+            PrevPt = e.getPoint();
+        }
+
     }
     private class MouseMovementAdapter extends MouseMotionAdapter{
 
+        public void mouseDragged(MouseEvent e) {
+            Point currentPt = e.getPoint(); 
+
+            imageCorners.translate((int)(currentPt.getX()- PrevPt.getX()), (int)(currentPt.getY()- PrevPt.getY()));
+
+            PrevPt = currentPt;
+            repaint(); 
+
+        }
     }
 
 }
