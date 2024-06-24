@@ -1,7 +1,13 @@
 package DragDrop;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+import java.awt.Graphics;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseMotionAdapter;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +28,29 @@ class MyFrame extends JFrame {
 }
 
 class DragPanel extends JPanel{
+    ImageIcon icon = new ImageIcon("logo.png");
+    final int WEITH = icon.getIconWidth();
+    final int HEIGHT = icon.getIconHeight();
+    Point imageCorners;
+    Point Prevpt;
+
+    // DragPanel(){
+    //     imageCorners = new Point(0,0);
+    //     MouseClickAdapter mouseClick = new MouseClickAdapter();
+    //     MouseMovementAdapter mouseMovement = new MouseMovementAdapter();
+    //     this.addMouseListener(mouseClick);
+    //     this.addMouseMotionListener(mouseMovement);
+    // }
+
+    private void ColorComponent(Graphics g){
+
+    }
+
+    private class MouseClickAdapter extends MouseAdapter{
+        
+    }
+    private class MouseMovementAdapter extends MouseMotionAdapter{
+
+    }
 
 }
