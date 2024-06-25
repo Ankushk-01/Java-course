@@ -1,5 +1,6 @@
 package MiniProjects.KeyBinding;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
@@ -21,12 +22,19 @@ class Game{
     Action leftAction;
     Action rightAction;
     Game(){
-        
+        // label
+
+        label = new JLabel();
+        label.setBackground(Color.RED);
+        label.setBounds(100, 100, 100, 100);
+        label.setOpaque(true);
+
         // frame
         frame = new JFrame("Key Binding Demo");
         frame.setSize(500,500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
+        frame.add(label);
         frame.setVisible(true);
     }
 
