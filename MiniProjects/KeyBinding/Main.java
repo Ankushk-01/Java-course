@@ -37,16 +37,16 @@ class Game{
         label.setBounds(100, 100, 100, 100);
         label.setOpaque(true);
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("UP"), "upAction");
+        label.getInputMap().put(KeyStroke.getKeyStroke('w'), "upAction");
         label.getActionMap().put("upAction", upAction);
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"), "downAction");
+        label.getInputMap().put(KeyStroke.getKeyStroke('s'), "downAction");
         label.getActionMap().put("downAction", downAction); 
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("LEFT"), "leftAction");
+        label.getInputMap().put(KeyStroke.getKeyStroke('a'), "leftAction");
         label.getActionMap().put("leftAction", leftAction); 
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"), "rightAction");
+        label.getInputMap().put(KeyStroke.getKeyStroke('d'), "rightAction");
         label.getActionMap().put("rightAction", rightAction); 
 
         // frame
