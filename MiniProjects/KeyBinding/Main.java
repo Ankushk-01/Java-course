@@ -7,6 +7,7 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.KeyStroke;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,12 +23,31 @@ class Game{
     Action leftAction;
     Action rightAction;
     Game(){
-        // label
 
+        // Actions 
+
+        upAction = new UpAction();
+        downAction = new DownAction();
+        leftAction = new LeftAction();
+        rightAction = new RightAction();
+
+        // label
         label = new JLabel();
         label.setBackground(Color.RED);
         label.setBounds(100, 100, 100, 100);
         label.setOpaque(true);
+
+        label.getInputMap().put(KeyStroke.getKeyStroke("UP"), "upAction");
+        label.getActionMap().put("upAction", upAction);
+
+        label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"), "downAction");
+        label.getActionMap().put("downAction", downAction); 
+
+        label.getInputMap().put(KeyStroke.getKeyStroke("LEFT"), "leftAction");
+        label.getActionMap().put("leftAction", leftAction); 
+
+        label.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"), "rightAction");
+        label.getActionMap().put("rightAction", rightAction); 
 
         // frame
         frame = new JFrame("Key Binding Demo");
@@ -42,7 +62,7 @@ class Game{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
+            label.setLocation(label.getX(), label.getY()-10);
         }
 
     }
@@ -50,7 +70,7 @@ class Game{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
+            label.setLocation(label.getX(), label.getY()+10);
         }
 
     }
@@ -58,7 +78,7 @@ class Game{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
+            label.setLocation(label.getX()-10, label.getY());
         }
 
     }
@@ -66,7 +86,7 @@ class Game{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
+            label.setLocation(label.getX()+10, label.getY());
         }
 
     }
