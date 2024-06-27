@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -34,6 +35,24 @@ class MyLabel extends JLabel{
     public void paint(Graphics g){
         Graphics2D g2D = (Graphics2D) g;
         g2D.setStroke(new BasicStroke(5));
+        g2D.setPaint(Color.RED);
         g2D.drawLine(0, 0, 500, 500);
+
+        // square
+
+        g2D.setPaint(Color.BLUE);
+        g2D.drawRect(10, 10, 100, 100);
+
+        g2D.setPaint(Color.pink);
+        g2D.fillRect(50, 50, 100, 100);
+
+        g2D.setPaint(Color.GRAY);
+        g2D.drawOval(350, 150, 100, 100);
+        g2D.setPaint(Color.green);
+        g2D.fillOval(350, 50, 100, 100);
+
+        // g2D.dispose(); to free the resources 
+
+
     }
 }
