@@ -58,7 +58,13 @@ class MyLabel extends JLabel{
         g2D.setPaint(Color.white);
         g2D.fillArc(50,100,150,150,180,180);
 
-        
+        int [] xPoints = {150,250,350};
+        int [] yPoints = {350,250,350};
+        g2D.setPaint(Color.GREEN);
+        g2D.fillPolygon(xPoints,yPoints,3);
+
+        g2D.setPaint(Color.ORANGE);
+        g2D.drawString("Hello Friends ",50,50);
 
     }
 }
