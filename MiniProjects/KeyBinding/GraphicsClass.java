@@ -43,13 +43,13 @@ class MyLabel extends JLabel{
         // g2D.setPaint(Color.BLUE);
         // g2D.drawRect(10, 10, 100, 100);
 
-        // g2D.setPaint(Color.pink);
-        // g2D.fillRect(50, 50, 100, 100);
+        g2D.setPaint(Color.pink);
+        g2D.fillRect(50, 50, 100, 100);
 
-        // g2D.setPaint(Color.GRAY);
-        // g2D.drawOval(350, 150, 100, 100);
-        // g2D.setPaint(Color.green);
-        // g2D.fillOval(350, 50, 100, 100);
+        g2D.setPaint(Color.GRAY);
+        g2D.drawOval(350, 150, 100, 100);
+        g2D.setPaint(Color.green);
+        g2D.fillOval(350, 50, 100, 100);
 
         // g2D.dispose(); to free the resources 
 
@@ -59,7 +59,7 @@ class MyLabel extends JLabel{
         g2D.fillArc(50,100,150,150,180,180);
 
         int [] xPoints = {150,250,350};
-        int [] yPoints = {350,250,350};
+        int [] yPoints = {350,250,350}; 
         g2D.setPaint(Color.GREEN);
         g2D.fillPolygon(xPoints,yPoints,3);
 
