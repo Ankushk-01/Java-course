@@ -34,14 +34,14 @@ class MyLabel extends JLabel{
     }
     public void paint(Graphics g){
         Graphics2D g2D = (Graphics2D) g;
-        // g2D.setStroke(new BasicStroke(5));
-        // g2D.setPaint(Color.RED);
-        // g2D.drawLine(0, 0, 500, 500);
+        g2D.setStroke(new BasicStroke(5));
+        g2D.setPaint(Color.RED);
+        g2D.drawLine(0, 0, 500, 500);
 
-        // square
+        square
 
-        // g2D.setPaint(Color.BLUE);
-        // g2D.drawRect(10, 10, 100, 100);
+        g2D.setPaint(Color.BLUE);
+        g2D.drawRect(10, 10, 100, 100);
 
         g2D.setPaint(Color.pink);
         g2D.fillRect(50, 50, 100, 100);
