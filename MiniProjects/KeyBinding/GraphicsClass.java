@@ -40,6 +40,7 @@ class MyLabel extends JLabel{
 
         // square
 
+        
         g2D.setPaint(Color.BLUE);
         g2D.drawRect(10, 10, 100, 100);
 
