@@ -19,9 +19,5 @@ public class PredicateClass {
 		System.out.println("24 : "+divisionBy2Or3.test(24)); // it will give true is any of the predicate will give the true as a output
 		
 		Predicate<Integer> negation = divisionBy2.negate(); // negate of divisionBy2 predicate
-		
-		
-		
-		
 	}
 }
